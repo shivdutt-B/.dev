@@ -3,7 +3,7 @@ import User from "../assets/image.png"
 
 function Intro() {
     return (
-        <div className="flex justify-center mt-[4vw] p-[3vw]">
+        <div className="flex justify-center mt-[4vw] py-14">
             <div class="grid grid-cols-2 max-w-[1000px] w-[100%]">
                 <div class="">
                     <h1 class="text-[clamp(30px,10vw,40px)] font-[var(--max-weight)] text-[var(--dark-txt)] mb-4">
