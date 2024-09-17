@@ -4,3 +4,9 @@
 .fluid-txt-nav-head {
     font-size:var(--max-heading);
 }
+.intro-info-para {
+    font-size: var(--primary-font-size);
+}
+h1 {
+    /* line-height: 30px; */
+}
