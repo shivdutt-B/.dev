@@ -6,7 +6,7 @@ import Mira from "../assets/mira.png"
 
 function Projects() {
     return (
-        <div className="max-w-[1300px] w-[100%] px-[4vw] m-auto">
+        <div className="max-w-[1300px] w-[100%] px-[4vw] m-auto" id="projects">
 
 
             <div className="flex h-[330px] overflow-hidden my-32 box-content">

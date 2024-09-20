@@ -3,7 +3,7 @@ import Me from "../assets/me_yellow.png"
 
 function Intro() {
     return (
-        <div className="flex justify-center my-32">
+        <div className="flex justify-center my-32" id="intro"> 
             <div class="grid grid-cols-2 max-w-[1200px] w-[100%]">
                 <div class="flex justify-center flex-col">
                     <h1 class="text-[clamp(35px,10vw,45px)] font-[var(--max-weight)] text-[var(--dark-txt)]">

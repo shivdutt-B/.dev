@@ -64,3 +64,51 @@
   background-repeat: repeat;
   background-size:contain;
 }
+
+
+/* ANIMATION FOR HAM MENU */
+.ham-container {
+  position: relative;
+  width: 35px;
+  height: 24px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+.ham-container .line {
+  width: 100%;
+  height: 3px;
+  background-color: var(--dark-txt);
+  transition: transform 0.3s ease, opacity 0.3s ease;
+  position: absolute;
+}
+
+.ham-container .top {
+  top: 0;
+  transform-origin: left;
+}
+
+.ham-container .middle {
+  top: 50%;
+  transform: translateY(-50%);
+  opacity: 1;
+}
+
+.ham-container .bottom {
+  bottom: 0;
+  transform-origin: left;
+}
+
+.ham-container.open .top {
+  transform: rotate(45deg) translate(1px, -4px);
+}
+
+.ham-container.open .middle {
+  opacity: 0;
+}
+
+.ham-container.open .bottom {
+  transform: rotate(-45deg) translate(2px, 2px);
+}

@@ -4,7 +4,7 @@ function Contact() {
     return (
         <>
             <div className="h-40 contact-container-top"></div>
-            <div className="h-80 bg-[#8a84f8] contact-container-bottom">
+            <div className="h-80 bg-[#8a84f8] contact-container-bottom" id="contact"> 
                 <div className="map-overlay h-[100%]">
                     <h1 className="text-center text-[clamp(30px,10vw,40px)] font-[var(--max-weight)] text-white">Don't be shy! Hit me up! 👇</h1>
                     <button className="mx-auto my-6 block  py-3 px-5 bg-[var(--theme-color)] font-[var(--mid-weight)] text-white rounded-md hover:bg-purple-700 transition duration-300 shadow-[0_3px_8px_rgba(0,0,0,0.6)]">

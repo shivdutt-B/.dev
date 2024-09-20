@@ -3,7 +3,7 @@ import Me from "../assets/color_stripe_crop.jpg"
 
 function Intro() {
     return (
-        <div className="flex justify-center my-40">
+        <div className="flex justify-center my-40" id="about">
             <div class="grid grid-cols-2 max-w-[1000px] w-[100%]">
                 <div class="">
                     <div class="">
