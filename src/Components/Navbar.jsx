@@ -1,9 +1,10 @@
 import React from 'react'
 
 function Navbar() {
+  
   return (
     <div>
-      <nav class="flex justify-between items-center p-5 px-[3vw] shadow-[0px_4px_7px_1px_rgba(0,_0,_0,_0.1)]">
+      <nav class="flex justify-between items-center p-5 px-[3vw] shadow-[0px_4px_7px_1px_rgba(0,_0,_0,_0.1)] fixed top-0 z-[999] w-[100%] bg-[var(--bg)]">
         <div class="font-[var(--max-weight)] text-[25px] text-[var(--dark-txt)] 
         text-[clamp(25px,2vw,48px)] cursor-pointer flex items-center">
           <span className="relative top-1 right-[-5px]">
@@ -12,10 +13,10 @@ function Navbar() {
           dev
         </div>
         <div class="flex items-center space-x-8">
-          <a href="#" class="text-[var(--light-txt)] font-[var(--mid-weight)] text-[clamp(16px,1.2vw,20px)]">Home</a>
-          <a href="#" class="text-[var(--light-txt)] font-[var(--mid-weight)] text-[clamp(16px,1.2vw,20px)]">About</a>
-          <a href="#" class="text-[var(--light-txt)] font-[var(--mid-weight)] text-[clamp(16px,1.2vw,20px)]">Projects</a>
-          <a href="#" class="text-[var(--light-txt)] font-[var(--mid-weight)] text-[clamp(16px,1.2vw,20px)]">Contact</a>
+          <a href="#" class="text-[var(--light-txt)] font-[var(--mid-weight)] text-[clamp(16px,1.2vw,20px)] py-[2px] px-[8px] hover:bg-[var(--theme-color)] hover:text-white transition-all duration-500 rounded-sm">Home</a>
+          <a href="#" class="text-[var(--light-txt)] font-[var(--mid-weight)] text-[clamp(16px,1.2vw,20px)] py-[2px] px-[8px] hover:bg-[var(--theme-color)] hover:text-white transition-all duration-300 rounded-sm">About</a>
+          <a href="#" class="text-[var(--light-txt)] font-[var(--mid-weight)] text-[clamp(16px,1.2vw,20px)] py-[2px] px-[8px] hover:bg-[var(--theme-color)] hover:text-white transition-all duration-300 rounded-sm">Projects</a>
+          <a href="#" class="text-[var(--light-txt)] font-[var(--mid-weight)] text-[clamp(16px,1.2vw,20px)] py-[2px] px-[8px] hover:bg-[var(--theme-color)] hover:text-white transition-all duration-300 rounded-sm">Contact</a>
         </div>
       </nav>
     </div>
