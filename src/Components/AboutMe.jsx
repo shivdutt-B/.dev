@@ -8,7 +8,7 @@ function Intro() {
             <div className="flex flex-col-reverse md:flex-row max-w-[1000px] w-full gap-8">
                 
                 {/* Left Side (Image Section) */}
-                <div className="flex justify-center md:justify-start">
+                <div className="flex justify-center md:justify-start w-[100%]">
                     <img 
                         className="rounded-md w-full h-auto md:w-[500px] object-cover" 
                         src={Me} 
