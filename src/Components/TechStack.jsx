@@ -3,7 +3,7 @@ import React, { useState } from 'react'
 function TechStack() {
     const [techStack, setTechStack] = useState(['html', 'css', 'js', 'react', 'nodejs', 'express', 'mongodb', 'mysql', 'bootstrap', 'ts', 'tailwind', 'python', 'cpp', 'git', 'github', 'postman'])
     return (
-        <div className="my-40 flex  justify-center" >
+        <div className="my-20 md:my-40 flex  justify-center" >
             <a className="max-w-[300px] w-[100%] text-center tech-stack-icon-conainer" href="https://skillicons.dev">
                 {
                     techStack.map((tech, index) => {

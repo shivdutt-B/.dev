@@ -1,5 +1,5 @@
 import React from 'react';
-import Me from "../assets/me_yellow.png";
+import Me from "../assets/main5.png";
 
 function Intro() {
     return (
@@ -7,10 +7,10 @@ function Intro() {
 
             <div className="grid md:grid-cols-2 grid-cols-1 max-w-[1200px] w-[100%] gap-8">
 
-                <div className="hidden justify-center order-2 md:flex"><img src={Me} alt="Shivdutt Bhadakwad" className="max-w-[300px] w-[100%] md:max-w-[350px]" /></div>
+                <div className="hidden justify-center order-2 md:flex"><img src={Me} alt="Shivdutt Bhadakwad" className="main-img max-w-[500px] w-[100%] md:max-w-[350px]" /></div>
 
                 <div className="flex text-center justify-center flex-col order-1 md:text-left">
-                    <h1 className="text-[clamp(35px,8vw,45px)] font-[var(--max-weight)] text-[var(--dark-txt)]">
+                    <h1 className="text-[clamp(30px,8vw,45px)] font-[var(--max-weight)] text-[var(--dark-txt)]">
                         <span className="text-[var(--dark-txt)]">
                             Full Stack Developer.
                         </span>
@@ -19,8 +19,8 @@ function Intro() {
                             ML Enthusiast.
                         </span>
                     </h1>
-                    <p className="text-[var(--light-txt)] mb-8 text-[clamp(16px,1.5vw,20px)] font-[var(--min-weight)] pr-5">
-                        Hello, I'm Shivdutt Bhadakwad. I am a passionate full stack developer <br /> and machine learning enthusiast.
+                    <p className="text-[var(--light-txt)] mb-8 text-[clamp(14px,1.5vw,20px)] font-[var(--min-weight)] pr-5">
+                        Hello, I'm Shivdutt Bhadakwad. I am a passionate full stack developer 💻 <br /> and machine learning enthusiast 🤖.
                     </p>
                     <button className="font-[var(--min-weight)] mx-[auto] bg-[var(--theme-color)] 
                     text-white py-2 px-4 rounded-md hover:bg-purple-700 transition duration-300 shadow-[0_3px_8px_rgba(0,0,0,0.6)] w-[130px] md:mx-0">

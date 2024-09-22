@@ -45,19 +45,13 @@
     background-position: bottom;
 }
 
-.project-desc:nth-child(even) {
+.project-desc {
   background-image: url('./assets/sm-dot.svg');
   background-repeat: no-repeat;
   background-position:bottom right;
   background-size: contain;
 }
 
-.project-desc:nth-child(odd) {
-  background-image: url('./assets/sm-dot.svg');
-  background-repeat: no-repeat;
-  background-position:bottom left;
-  background-size: contain;
-}
 
 .tech-stack-icon-conainer {
   background-image: url('./assets/dotnlines.svg');
@@ -111,4 +105,23 @@
 
 .ham-container.open .bottom {
   transform: rotate(-45deg) translate(2px, 2px);
+}
+
+
+/* RESPONSIVENESS FOR CODE AND LIVE BUTTON */
+
+@media screen and (max-width: 250px) {
+  .code-live-btn-container {
+    display: block;
+
+  }
+  .code-live-btn-container a{
+    display: block;
+    width:100%;
+    margin:10px 0;
+  }
+  .apple-heading {
+    max-width:100px;
+  }
+  
 }
