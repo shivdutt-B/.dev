@@ -1,5 +1,5 @@
 import React from 'react';
-import Me from "../assets/Mmain7.png";
+import Me from "../assets/main5.png";
 
 function Intro() {
     return (
