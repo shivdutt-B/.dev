@@ -21,7 +21,7 @@ function Intro() {
                     <h1 className="text-[clamp(30px,8vw,40px)] font-[var(--max-weight)] text-[var(--dark-txt)] mb-4">
                         About Me
                     </h1>
-                    <p className="text-[var(--light-txt)] mb-0 text-[clamp(14px,1.5vw,20px)] leading-relaxed">
+                    <p className="text-[var(--light-txt)] mb-0 text-[clamp(16px,1.5vw,20px)] leading-relaxed">
                         Hi, I'm Shivdutt Bhadakwad, a Fullstack Developer with a strong passion for Machine Learning.
                         <br /><br />
                         Currently, I'm in my second year of studying Computer Engineering in Pune, India, where I'm actively building my skills and knowledge in both web development and cutting-edge technologies like AI.
