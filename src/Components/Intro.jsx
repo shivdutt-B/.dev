@@ -19,7 +19,7 @@ function Intro() {
                             ML Enthusiast.
                         </span>
                     </h1>
-                    <p className="text-[var(--light-txt)] mb-8 text-[clamp(14px,1.5vw,20px)] font-[var(--min-weight)] pr-5">
+                    <p className="text-[var(--light-txt)] mb-8 text-[clamp(16px,1.5vw,20px)] font-[var(--min-weight)] pr-5">
                         Hello, I'm Shivdutt Bhadakwad. I am a passionate full stack developer 💻 <br /> and machine learning enthusiast 🤖.
                     </p>
                     <button className="font-[var(--min-weight)] mx-[auto] bg-[var(--theme-color)] 
