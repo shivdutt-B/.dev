@@ -24,12 +24,12 @@
   }
 
 .contact-container-top {
-    background-image: url('./assets/bottom-big-layer.png');
+    background-image: url('./assets/peripherals/bottom-big-layer.png');
     background-position-y: 50%;
 }
 
 .map-overlay {
-    background-image: url('./assets/dot-map.png');
+    background-image: url('./assets/peripherals/dot-map.png');
     background-position: center;
     background-repeat: no-repeat;
     display: block;
@@ -39,14 +39,14 @@
   }
 
 .footer-first {
-    background-image: url('./assets/bottom-dark-layer.png');
+    background-image: url('./assets/peripherals/bottom-dark-layer.png');
     background-repeat: no-repeat;
     background-size: 100% auto;
     background-position: bottom;
 }
 
 .project-desc {
-  background-image: url('./assets/sm-dot.svg');
+  background-image: url('./assets/peripherals/sm-dot.svg');
   background-repeat: no-repeat;
   background-position:bottom right;
   background-size: contain;
@@ -54,7 +54,7 @@
 
 
 .tech-stack-icon-conainer {
-  background-image: url('./assets/dotnlines.svg');
+  background-image: url('./assets/peripherals/dotnlines.svg');
   background-repeat: repeat;
   background-size:contain;
 }

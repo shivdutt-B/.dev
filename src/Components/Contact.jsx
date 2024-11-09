@@ -17,7 +17,7 @@ function Contact() {
             <div className="h-80 bg-[#8a84f8] contact-container-bottom" id="contact"> 
                 <div className="map-overlay h-[100%]">
                     <h1 className="text-center text-[clamp(30px,10vw,40px)] font-[var(--max-weight)] text-white">
-                        Don't be shy! Hit me up! 👇
+                    Let’s make something awesome together!👇
                     </h1>
                     <div className="relative w-fit mx-auto my-6">
                         <a

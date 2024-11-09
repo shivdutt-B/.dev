@@ -1,5 +1,5 @@
 import React from 'react';
-import Me from "../assets/color_stripe_crop.jpg";
+import Me from "../assets/displayPicture/color_stripe_me.jpg";
 
 function Intro() {
     return (

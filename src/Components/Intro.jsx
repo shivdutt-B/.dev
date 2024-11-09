@@ -1,6 +1,6 @@
 import React from 'react';
-import Me from "../assets/main.png";
-import Resume from '../assets/shivdutt.pdf';
+import Me from "../assets/displayPicture/main.png";
+import Resume from '../assets/resume/shivdutt.pdf';
 
 function Intro() {
     return (

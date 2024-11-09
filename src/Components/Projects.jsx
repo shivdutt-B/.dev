@@ -1,8 +1,8 @@
 import React from 'react'
-import Apple from "../assets/apple-full-ss.png"
-import Vortex from "../assets/vortex.png"
-import Esther from "../assets/esther.png"
-import Mira from "../assets/mira.png"
+import Apple from "../assets/projectSS/apple-full-ss.png"
+import Vortex from "../assets/projectSS/vortex.png"
+import Esther from "../assets/projectSS/esther.png"
+import Mira from "../assets/projectSS/mira.png"
 
 function Projects() {
     return (
