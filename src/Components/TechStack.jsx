@@ -10,7 +10,12 @@ function TechStack() {
     const [techStack, setTechStack] = useState(['html', 'css', 'js', 'react', 'nodejs', 'express', 'mongodb', 'mysql', 'bootstrap', 'ts', 'tailwind', 'python', 'cpp', 'git', 'github', 'postman'])
 
     // Tech logos which are locally present (didn't get these logo in the third party)
-    const [localTechStack, setLocalTechStack] = useState([Numpy, Pandas, MatPlotLib, Seaborn])
+    const [localTechStack, setLocalTechStack] = useState({
+        'Numpy': Numpy,
+        'Pandas': Pandas,
+        'MatPlotLib': MatPlotLib,
+        'Seaborn': Seaborn
+    })
 
     // Number of techs imported + locals.
     const [techCount, setTechCount] = useState(techStack.length + localTechStack.length)
@@ -45,26 +50,27 @@ function TechStack() {
                             </div>
                         ))}
 
-                        {localTechStack.map((tech, index) => (
+                        {Object.entries(localTechStack).map(([name, tech], index) => (
                             <div
-                                key={index}
+                                key={index}  // Ensure each item has a unique key
                                 className="relative inline-block m-[10px] max-w-[55px]"
-                                onMouseEnter={() => setHoveredTech(tech)}
+                                onMouseEnter={() => setHoveredTech(name)}
                                 onMouseLeave={() => setHoveredTech(null)}
                             >
                                 <img
-                                    className="hover:cursor-pointer w-[100%]"
+                                    className="hover:cursor-pointer w-full"  // Changed w-[100%] to w-full for consistent Tailwind styling
                                     src={tech}
-                                    alt="Tech icon"
+                                    alt={`${name} icon`}  // Updated alt text for accessibility
                                 />
                                 {/* Tooltip */}
-                                {hoveredTech === tech && (
+                                {hoveredTech === name && (
                                     <div className="absolute left-1/2 transform -translate-x-1/2 mt-2 z-50 bg-gray-800 text-white text-xs rounded py-1 px-2">
-                                        {tech.split('/').pop().split('.')[0]}
+                                        {name}
                                     </div>
                                 )}
                             </div>
                         ))}
+
                     </div>
                 }
 
