@@ -4,10 +4,7 @@ import Me from "../assets/color_stripe_crop.jpg";
 function Intro() {
     return (
         <div className="flex justify-center my-20 md:my-40 px-5" id="about">
-            {/* Flexbox container with responsive layout */}
             <div className="flex flex-col-reverse md:flex-row max-w-[1200px] w-full gap-8">
-                
-                {/* Left Side (Image Section) */}
                 <div className="flex justify-center md:justify-start w-[100%]">
                     <img 
                         className="rounded-md w-full h-auto md:w-[500px] object-cover" 
