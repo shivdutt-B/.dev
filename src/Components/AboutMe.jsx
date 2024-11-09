@@ -16,7 +16,7 @@ function Intro() {
                 {/* Right Side (Text Section) */}
                 <div className="flex flex-col justify-center">
                     <h1 className="text-[clamp(30px,8vw,40px)] font-[var(--max-weight)] text-[var(--dark-txt)] mb-4">
-                        About Me
+                        About Me🤷‍♂️
                     </h1>
                     <p className="text-[var(--light-txt)] mb-0 text-[clamp(16px,1.5vw,20px)] leading-relaxed">
                         Hi, I'm Shivdutt Bhadakwad, a Fullstack Developer with a strong passion for Machine Learning.
