@@ -14,7 +14,7 @@ function Contact() {
     return (
         <>
             <div className="h-40 contact-container-top"></div>
-            <div className="h-80 bg-[#8a84f8] contact-container-bottom" id="contact">
+            <div className="h-[350px] bg-[#8a84f8] contact-container-bottom" id="contact">
                 <div className="map-overlay px-5 h-[100%]">
                     <h1 className="text-center text-[clamp(30px,10vw,40px)] font-[var(--max-weight)] text-white">
                         Let’s make something awesome together!🤝
