@@ -20,12 +20,12 @@ function TechStack() {
     // Number of techs imported + locals.
     const [techCount, setTechCount] = useState(techStack.length + localTechStack.length)
 
-
+    // For tool tip
     const [hoveredTech, setHoveredTech] = useState(null);
 
 
     return (
-        <div className="my-20 md:my-40 flex  justify-center" >
+        <div className="my-20 mx-5 md:my-40 flex justify-center " >
             <a className="max-w-[350px] w-[100%] text-center tech-stack-icon-conainer">
                 {
                     <div className={`grid grid-cols-5 grid-row-[${techCount / 5}]`}>

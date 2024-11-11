@@ -14,10 +14,10 @@ function Contact() {
     return (
         <>
             <div className="h-40 contact-container-top"></div>
-            <div className="h-80 bg-[#8a84f8] contact-container-bottom" id="contact"> 
-                <div className="map-overlay h-[100%]">
+            <div className="h-80 bg-[#8a84f8] contact-container-bottom" id="contact">
+                <div className="map-overlay px-5 h-[100%]">
                     <h1 className="text-center text-[clamp(30px,10vw,40px)] font-[var(--max-weight)] text-white">
-                    Let’s make something awesome together!🤝
+                        Let’s make something awesome together!🤝
                     </h1>
                     <div className="relative w-fit mx-auto my-6">
                         <a
@@ -36,7 +36,7 @@ function Contact() {
                                 />
                             </svg>
                         </a>
-                        
+
                         {showPopover && (
                             <div className="absolute left-1/2 -translate-x-1/2 mt-2 p-2 bg-black text-white text-sm rounded-md shadow-lg">
                                 shivdutt059@gmail.com
