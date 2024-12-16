@@ -8,14 +8,15 @@ import Contact from "./Components/Contact";
 import Footer from "./Components/Footer";
 import AboutMe from "./Components/AboutMe";
 import DSA from "./Components/DSA";
+import { StatsContextData } from "./Context/StatsContext";
 
 function App() {
   const [count, setCount] = useState(0);
 
   return (
     <>
+    <StatsContextData>
       <Navbar />
-      {/* <div className="max-w-[1000px] w-[100%] m-auto  px-[3vw]"> */}
       <Intro />
       <TechStack />
       <DSA />
@@ -23,7 +24,7 @@ function App() {
       <Projects />
       <Contact />
       <Footer />
-      {/* </div> */}
+    </StatsContextData>
     </>
   );
 }

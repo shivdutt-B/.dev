@@ -1,5 +1,5 @@
 .green {
-  background: #66FF99;
+  background: #66ff99;
 }
 
 .circle {
@@ -25,12 +25,12 @@
 }
 
 .contact-container-top {
-  background-image: url('./assets/peripherals/bottom-big-layer.png');
+  background-image: url("./assets/peripherals/bottom-big-layer.png");
   background-position-y: 50%;
 }
 
 .map-overlay {
-  background-image: url('./assets/peripherals/dot-map.png');
+  background-image: url("./assets/peripherals/dot-map.png");
   background-position: center;
   background-repeat: no-repeat;
   display: flex;
@@ -43,26 +43,24 @@
 }
 
 .footer-first {
-  background-image: url('./assets/peripherals/bottom-dark-layer.png');
+  background-image: url("./assets/peripherals/bottom-dark-layer.png");
   background-repeat: no-repeat;
   background-size: 100% auto;
   background-position: bottom;
 }
 
 .project-desc {
-  background-image: url('./assets/peripherals/sm-dot.svg');
+  background-image: url("./assets/peripherals/sm-dot.svg");
   background-repeat: no-repeat;
   background-position: bottom right;
   background-size: contain;
 }
 
-
 .tech-stack-icon-conainer {
-  background-image: url('./assets/peripherals/dotnlines.svg');
+  background-image: url("./assets/peripherals/dotnlines.svg");
   background-repeat: repeat;
   background-size: contain;
 }
-
 
 /* ANIMATION FOR HAM MENU */
 .ham-container {
@@ -111,13 +109,166 @@
   transform: rotate(-45deg) translate(2px, 2px);
 }
 
+/* ==================================================================================== */
+/* LEETCODE DASHBOARD */
+.grad1 {
+  height: 200px;
+  width: 100%;
+  max-width: 200px;
+  background-image: conic-gradient(
+    from 205deg,
+
+    transparent 0deg 15deg,
+
+    #1cbaba 15deg 45deg,
+    /* progress */ #254545 45deg 97.5deg,
+
+    /* track */ transparent 97.5deg 112.5deg,
+
+    #8FD14F 112.5deg 150deg,
+    /* progress */ #00541a 150deg 195deg,
+
+    /* track */ transparent 195deg 210deg,
+
+    #f63737 210deg 230deg,
+    #512b2b 230deg 292.5deg,
+
+    transparent 292.5deg 307.5deg
+  );
+
+  border-radius: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  /* border: 1px solid var(--bg);
+  box-shadow: inset 0 0 0 1px var(--bg); */
+}
+
+.grad-mid {
+  height: 93%;
+  width: 93%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 100%;
+  /* background: var(--bg); */
+  color: black;
+}
+.sr {
+  /* width: 5px;
+  height: 5px; */
+  padding: 3.5px;
+  position: absolute;
+  background: #282828;
+  border-radius: 50%;
+  /*   border:1px solid black; */
+}
+
+/* setting for yellow */
+.soft-radius1 {
+  top: 85%;
+  left: 17%;
+  transform: rotate(45deg);
+  background: #1cbaba;
+}
+.soft-radius2 {
+  top: 22.5%;
+  left: 7.5%;
+  transform: rotate(120deg);
+  background: #254545;
+}
+
+/* setting for green */
+.soft-radius3 {
+  top: 12.6%;
+  left: 15.8%;
+  background: #8FD14F;
+  transform: rotate(-36deg);
+}
+.soft-radius4 {
+  top: 11.1%;
+  left: 78.9%;
+  background: #00541a;
+  transform: rotate(45deg);
+}
+.soft-radius5 {
+  background: #f63737;
+  top: 20%;
+  left: 87.5%;
+  transform: rotate(55deg);
+}
+.soft-radius6 {
+  background: #512b2b;
+  top: 83.6%;
+  right: 15.8%;
+  transform: rotate(-45deg);
+}
+
+/* TRANSITION ANIMATION ON SOLVED AND ACCEPTANCE */
+/* Container to stack elements */
+.group {
+  position: relative;
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
+}
+
+/* Default state styles */
+.default-state {
+  position: absolute;
+  inset: 0; /* Equivalent to top: 0, right: 0, bottom: 0, left: 0 */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  opacity: 1;
+  transform: scale(1);
+  transition: opacity 0.3s ease-in-out, transform 0.3s ease-in-out;
+}
+
+/* Hover state styles */
+.hover-state {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  opacity: 0;
+  transform: scale(1.1);
+  transition: opacity 0.5s ease-in-out, transform 0.5s ease-in-out;
+}
+
+/* Container hover effect */
+.group:hover .default-state {
+  opacity: 0;
+  transform: scale(0.95);
+}
+
+.group:hover .hover-state {
+  opacity: 1;
+  transform: scale(1);
+}
+
+/* Typography */
+.text-large {
+  font-size: 2rem; /* Adjust as needed */
+  font-weight: bold;
+}
+
+.text-small {
+  font-size: 0.875rem; /* Adjust as needed */
+  text-align: center;
+}
+
+/* ==================================================================================== */
 
 /* RESPONSIVENESS FOR CODE AND LIVE BUTTON */
 
 @media screen and (max-width: 250px) {
   .code-live-btn-container {
     display: block;
-
   }
 
   .code-live-btn-container a {
@@ -129,5 +280,4 @@
   .apple-heading {
     max-width: 100px;
   }
-
 }

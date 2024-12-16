@@ -4,18 +4,6 @@ import React, { useEffect, useState } from "react";
 function Navbar() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
-  async function fetchDSA() {
-    const res = await fetch(
-      "https://leetcode-api-faisalshohag.vercel.app/shivdutt-B"
-    );
-    const toJson = await res.json();
-    console.log(toJson);
-  }
-
-  useEffect(() => {
-    fetchDSA();
-  });
-
   // Toggle the mobile menu
   const toggleMenu = () => {
     setIsMenuOpen(!isMenuOpen);
