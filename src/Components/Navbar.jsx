@@ -1,5 +1,4 @@
-import { stringify } from "postcss";
-import React, { useEffect, useState } from "react";
+import React, { useState } from "react";
 
 function Navbar() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -86,7 +85,7 @@ function Navbar() {
 
         {/* Mobile Menu */}
         <div
-          className={`absolute h-[100vh] justify-center transition duration-300 h-[100vh] top-[75px] left-0 w-full bg-[var(--bg)] py-5 flex-col items-center space-y-5 md:hidden ${
+          className={`absolute justify-center transition duration-300 h-[100vh] top-[75px] left-0 w-full bg-[var(--bg)] py-5 flex-col items-center space-y-5 md:hidden ${
             isMenuOpen ? "flex" : "hidden"
           }`}
         >

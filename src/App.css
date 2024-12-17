@@ -265,78 +265,69 @@
 /* ==================================================================================== */
 
 /* ==================================================================================== */
-/* Adding Codilio profile */
-/* .iframe-gutter{
-  width:100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin: 50px auto;
-  border:1px solid red;
-}
-.iframe-container {
-  position: relative;
-  max-width: 1100px;
-  width: 100%;
-  height: 750px;
-  overflow: hidden;
-  border: 1px solid blue;
-  margin: auto;
-}
-.iframe-content {
-  position: absolute;
-  top: -76px;
-  left: -410px;
-  width: 1500px;
-  height: 2000px;
-  margin:auto;
-  border:1px solid green;
-} */
+/* Adding Codelio profile */
 
 .iframe-gutter {
   width: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
-  margin: 50px auto;
-  border: 1px solid red;
+  border-radius: 10px;
+  background-color: #f3f4f6;
+  height: 980px !important;
+  top: -135px;
 }
 
 .iframe-container {
   position: relative;
-  max-width: 100%;
-  width: 90vw; /* Responsive width */
-  /* height: 750px;  */
-  overflow: hidden; /* Prevent iframe overflow */
-  border: 1px solid blue;
+  max-width: 100%; /* Adjusts width to parent container */
+  width: 90vw; /* Use viewport width for better responsiveness */
+  overflow: hidden;
   margin: auto;
+  height: 980px !important;
 }
 
 .iframe-content {
-  width: 100%;
-  height: 100%;
-  border: none;
-}
-
-.scroll-wrapper {
-  position: relative;
-  overflow-y: scroll;
-  height: calc(100% - 200px); /* Restrict visible scrolling height */
-  width: 100%;
-  padding-bottom: 200px; /* Space to account for hidden bottom */
-}
-
-.overlay {
   position: absolute;
-  bottom: 0;
   left: 0;
+  bottom: -150px;
   width: 100%;
-  height: 200px; /* Same as the scrolling limit */
-  background: linear-gradient(to bottom, rgba(255, 255, 255, 0), white);
-  pointer-events: none; /* Allow interaction with iframe under the overlay */
-  z-index: 10;
+  transform: scale(1); /* Allows for scaling, if necessary */
+  transform-origin: top left;
+  overflow: hidden;
+  height: 980px !important;
+}
+.overlay {
+  width: 100%;
+  background-color: #f3f4f6;
+  z-index: 1;
+  position: absolute;
+  top: 150px; /* till 5000 */
+  height: 50px;
+}
+@media screen and (max-width: 767px) {
+  .iframe-gutter {
+    top: -75px;
+  }
 }
 
+@media screen and (max-width: 560px) {
+  .iframe-content {
+    bottom: -200px;
+  }
+  .overlay {
+    top: 200px;
+  }
+}
+
+@media screen and (max-width: 340px) {
+  .iframe-content {
+    bottom: -260px;
+  }
+  .overlay {
+    top: 260px;
+  }
+}
 /* ==================================================================================== */
 
 /* RESPONSIVENESS FOR CODE AND LIVE BUTTON */
