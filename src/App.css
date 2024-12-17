@@ -299,29 +299,42 @@
   justify-content: center;
   align-items: center;
   margin: 50px auto;
-  /* border: 1px solid red; */
+  border: 1px solid red;
 }
 
 .iframe-container {
   position: relative;
-  max-width: 100%; /* Adjusts width to parent container */
-  width: 90vw; /* Use viewport width for better responsiveness */
-  padding-top: 56.25%; /* Maintain 16:9 aspect ratio */
-  overflow: hidden;
-  /* border: 1px solid blue; */
+  max-width: 100%;
+  width: 90vw; /* Responsive width */
+  /* height: 750px;  */
+  overflow: hidden; /* Prevent iframe overflow */
+  border: 1px solid blue;
   margin: auto;
-  height: 780px;
 }
 
 .iframe-content {
-  position: absolute;
-  top: -76px;
-  left: 0;
   width: 100%;
   height: 100%;
-  /* border: 1px solid green; */
-  transform: scale(1); /* Allows for scaling, if necessary */
-  transform-origin: top left;
+  border: none;
+}
+
+.scroll-wrapper {
+  position: relative;
+  overflow-y: scroll;
+  height: calc(100% - 200px); /* Restrict visible scrolling height */
+  width: 100%;
+  padding-bottom: 200px; /* Space to account for hidden bottom */
+}
+
+.overlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 200px; /* Same as the scrolling limit */
+  background: linear-gradient(to bottom, rgba(255, 255, 255, 0), white);
+  pointer-events: none; /* Allow interaction with iframe under the overlay */
+  z-index: 10;
 }
 
 /* ==================================================================================== */

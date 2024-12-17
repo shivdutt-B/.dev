@@ -13,11 +13,14 @@ const GFGProfile = () => {
   return (
     <div className="iframe-gutter">
       <div className="iframe-container">
-        <iframe
-          src="https://codolio.com/profile/Pzipegasus"
-          className="iframe-content"
-          // scrolling="no"
-        ></iframe>
+        <div className="scroll-wrapper">
+          <iframe
+            src="https://codolio.com/profile/Pzipegasus"
+            className="iframe-content"
+            scrolling="yes"
+          ></iframe>
+        </div>
+        <div className="overlay"></div>
       </div>
     </div>
   );
