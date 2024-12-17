@@ -10,14 +10,18 @@ export const StatsContextData = ({ children }) => {
     totalEasy: 0,
     mediumSolved: 0,
     totalMedium: 0,
-    hardSolved:0,
+    hardSolved: 0,
     totalHard: 0,
-    totalSolved:0,
+    totalSolved: 0,
     totalQuestions: 0,
+    submissions: 0,
+    percentSolved: 0,
   });
+  const [loading, setLoading] = useState(false);
 
   // Fetching leetcode data
   async function fetchDSA() {
+    setLoading(true);
     const res = await fetch(
       "https://leetcode-api-faisalshohag.vercel.app/shivdutt-B"
     );
@@ -32,11 +36,12 @@ export const StatsContextData = ({ children }) => {
       totalHard: data.totalHard,
       totalSolved: data.totalSolved,
       totalQuestions: data.totalQuestions,
-      // contributionPoint: data.contributionPoint || prevStats.contributionPoint,
-      // ranking: data.ranking || prevStats.ranking,
-      // reputation: data.reputation || prevStats.reputation,
+      submissions: data.totalSubmissions[0].submissions,
+      percentSolved: ((data.totalSolved / data.totalQuestions) * 100).toFixed(
+        2
+      )
     }));
-    console.log(data);
+    setLoading(false);
   }
 
   useEffect(() => {
@@ -44,6 +49,8 @@ export const StatsContextData = ({ children }) => {
   }, []);
 
   return (
-    <StatsContext.Provider value={{}}>{children}</StatsContext.Provider>
+    <StatsContext.Provider value={{ stats, setStats, loading, setLoading }}>
+      {children}
+    </StatsContext.Provider>
   );
 };

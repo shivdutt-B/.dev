@@ -125,7 +125,7 @@
 
     /* track */ transparent 97.5deg 112.5deg,
 
-    #8FD14F 112.5deg 150deg,
+    #8fd14f 112.5deg 150deg,
     /* progress */ #00541a 150deg 195deg,
 
     /* track */ transparent 195deg 210deg,
@@ -183,7 +183,7 @@
 .soft-radius3 {
   top: 12.6%;
   left: 15.8%;
-  background: #8FD14F;
+  background: #8fd14f;
   transform: rotate(-36deg);
 }
 .soft-radius4 {
@@ -260,6 +260,68 @@
 .text-small {
   font-size: 0.875rem; /* Adjust as needed */
   text-align: center;
+}
+
+/* ==================================================================================== */
+
+/* ==================================================================================== */
+/* Adding Codilio profile */
+/* .iframe-gutter{
+  width:100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 50px auto;
+  border:1px solid red;
+}
+.iframe-container {
+  position: relative;
+  max-width: 1100px;
+  width: 100%;
+  height: 750px;
+  overflow: hidden;
+  border: 1px solid blue;
+  margin: auto;
+}
+.iframe-content {
+  position: absolute;
+  top: -76px;
+  left: -410px;
+  width: 1500px;
+  height: 2000px;
+  margin:auto;
+  border:1px solid green;
+} */
+
+.iframe-gutter {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 50px auto;
+  /* border: 1px solid red; */
+}
+
+.iframe-container {
+  position: relative;
+  max-width: 100%; /* Adjusts width to parent container */
+  width: 90vw; /* Use viewport width for better responsiveness */
+  padding-top: 56.25%; /* Maintain 16:9 aspect ratio */
+  overflow: hidden;
+  /* border: 1px solid blue; */
+  margin: auto;
+  height: 780px;
+}
+
+.iframe-content {
+  position: absolute;
+  top: -76px;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  /* border: 1px solid green; */
+  transform: scale(1); /* Allows for scaling, if necessary */
+  transform-origin: top left;
 }
 
 /* ==================================================================================== */
