@@ -15,8 +15,8 @@ function App() {
         <Navbar />
         <Intro />
         <TechStack />
-        <DSA />
         <AboutMe />
+        <DSA />
         <Projects />
         <Contact />
         <Footer />
