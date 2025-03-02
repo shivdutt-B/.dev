@@ -4,7 +4,7 @@ import Numpy from "../assets/techLogos/numpy.png";
 import Pandas from "../assets/techLogos/pandas.png";
 
 function TechStack() {
-  // Tech logos which we are importing from third party
+  // Tech logos which we are imported from third party
   const [techStack, setTechStack] = useState([
     "html",
     "css",
@@ -24,6 +24,14 @@ function TechStack() {
     "git",
     "github",
     "postman",
+    "aws",
+    "docker",
+    "kubernetes",
+    "jenkins",
+    "ansible",
+    "kafka",
+    "redis",
+    "nginx",
   ]);
 
   // Tech logos which are locally present (didn't get these logo in the third party)
