@@ -1,0 +1,37 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  /* Font Sizes */
+  --primary-font-size: clamp(16px, 1.2vw, 20px);
+
+
+  /* Heading Sizes */
+  --max-heading: clamp(25px, 2vw, 48px);
+  --mid-heading:clamp(25px, 10vw, 32px);
+  --min-heading:clamp(150px, 10vw, 190px);
+
+  /* Weights */
+  --min-weight: 400;
+  --max-weight: 900;
+  --mid-weight: 600;
+
+
+  /* Font Family */
+  --global-font-family: Poppins, sans-serif;
+
+  /* Colors */
+  --theme-color: #8144e5;
+  --bg: #f7faff;
+  /* --bg: #f3f4f6; */
+
+  /* Text Color */
+  --dark-txt: #2d2e32;
+  --light-txt: #555;
+
+}
+
+body {
+  background-color: var(--bg);
+}
