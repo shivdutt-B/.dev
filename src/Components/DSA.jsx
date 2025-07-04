@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 
 const overlayStyle = {
   position: "absolute",
@@ -7,8 +7,16 @@ const overlayStyle = {
 };
 
 const DSA = () => {
-  // Hide left overlay on mobile screens (width <= 600px)
-  const isMobile = window.innerWidth <= 600;
+  // Show left overlay only for screens >= 768px
+  const [showLeftOverlay, setShowLeftOverlay] = useState(window.innerWidth >= 768);
+
+  useEffect(() => {
+    const handleResize = () => {
+      setShowLeftOverlay(window.innerWidth >= 768);
+    };
+    window.addEventListener("resize", handleResize);
+    return () => window.removeEventListener("resize", handleResize);
+  }, []);
 
   return (
     <div
@@ -43,14 +51,14 @@ const DSA = () => {
           height: "180px",
         }}
       />
-      {/* Left overlay (hide on mobile) */}
-      {!isMobile && (
+      {/* Left overlay (only for screens >= 768px) */}
+      {showLeftOverlay && (
         <div
           style={{
             ...overlayStyle,
             top: 0,
             left: 0,
-            width: "100px",
+            width: "55px",
             height: "100%",
           }}
         />
