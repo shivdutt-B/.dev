@@ -19,9 +19,9 @@ const projects = [
     {
         id: "gorr",
         name: "Gorr",
-        video: "https://www.youtube.com/embed/-B-Hw2NKQGc?si=ADp4LIFFJ-xvqmBE", // YouTube embed link
+        video: "https://www.youtube.com/embed/kSnP80ctjlw?si=A1sgTAKp-RstJBC2", // YouTube embed link
         screenshots: [
-            "https://www.youtube.com/embed/-B-Hw2NKQGc?si=ADp4LIFFJ-xvqmBE", // Use YouTube embed as first "screenshot"
+            "https://www.youtube.com/embed/kSnP80ctjlw?si=A1sgTAKp-RstJBC2", // Use YouTube embed as first "screenshot"
             ss1, ss2, ss3, ss4, arch
         ],
         description: (
@@ -38,9 +38,9 @@ const projects = [
     {
         id: "heimdall",
         name: "Heimdall",
-        video: "https://www.youtube.com/embed/kSnP80ctjlw?si=A1sgTAKp-RstJBC2", // YouTube embed link
+        video: "https://www.youtube.com/embed/-B-Hw2NKQGc?si=ADp4LIFFJ-xvqmBE", // YouTube embed link
         screenshots: [
-            "https://www.youtube.com/embed/kSnP80ctjlw?si=A1sgTAKp-RstJBC2", // Use YouTube embed as first "screenshot"
+            "https://www.youtube.com/embed/-B-Hw2NKQGc?si=ADp4LIFFJ-xvqmBE", // Use YouTube embed as first "screenshot"
             heimdallSS1, heimdallSS2, heimdallSS3, heimdallSS4, heimdallSS5, heimdallArch
         ],
         description: (
@@ -218,7 +218,7 @@ function Projects() {
                                 </div>
                                 {/* Skills */}
                                 <img
-                                    className="w-full max-w-[300px] inline mb-4"
+                                    className="w-full h-[25px] object-contain inline mb-4"
                                     src={`https://skillicons.dev/icons?i=${project.technologies.join(",")}`}
                                     alt="Tech stack"
                                 />
@@ -261,7 +261,7 @@ function Projects() {
                                         {project.description}
                                     </div>
                                     <img
-                                        className="w-[calc(25px*11)] inline"
+                                        className="w-full h-[25px] object-contain inline"
                                         src={`https://skillicons.dev/icons?i=${project.technologies.join(",")}`}
                                         alt="Tech stack"
                                     />
