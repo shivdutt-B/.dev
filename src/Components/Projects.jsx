@@ -318,7 +318,7 @@ function Projects() {
                   {project.description}
                 </div>
                 {/* Skills */}
-                <div className="w-full flex items-center gap-2 mb-4">
+                <div className="w-full flex items-center gap-2 mb-4 overflow-auto">
                   {project.technologies.map((tech) => (
                     tech == "" ?
                     <p className="text-[25px]"> | </p>
@@ -384,7 +384,7 @@ function Projects() {
                   <div className="text-[clamp(14px,1.1vw,20px)] text-[var(--light-txt)] overflow-hidden my-5">
                     {project.description}
                   </div>
-                  <div className="w-full flex items-center gap-2 mb-4">
+                  <div className="w-full flex items-center gap-2 mb-4 overflow-auto">
                   {project.technologies.map((tech) => (
                     tech == "" ?
                     <p className="text-[25px]"> | </p>
