@@ -320,8 +320,16 @@ function Projects() {
                 {/* Skills */}
                 <div className="w-full flex items-center gap-2 mb-4">
                   {project.technologies.map((tech) => (
+                    tech == "" ?
+                    <p className="text-[25px]"> | </p>
+                    :
                     (tech == "socketio" || tech == "recoil") ? 
-                    <p>HI</p>
+                    <img
+                      key={tech}
+                      src={tech == "socketio" ? socketio : recoil}
+                      alt={tech}
+                      className="h-[25px] w-auto object-contain rounded-md"
+                    />
                     : 
                     <img
                       key={tech}
