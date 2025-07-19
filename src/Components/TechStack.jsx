@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 // import local logos for tech
-import Numpy from "../assets/techLogos/numpy.png";
-import Pandas from "../assets/techLogos/pandas.png";
+import Recoil from "../assets/techLogos/recoil.png";
+import SocketIO from "../assets/techLogos/socketio.png";
 
 function TechStack() {
   // Tech logos which we are imported from third party
@@ -31,18 +31,18 @@ function TechStack() {
     "ansible",
     "kafka",
     "redis",
+    "redux",
+    "nginx"
   ]);
 
   // Tech logos which are locally present (didn't get these logo in the third party)
-  // const [localTechStack, setLocalTechStack] = useState({
-  //   Numpy: Numpy,
-  //   Pandas: Pandas,
-  // });
+  const [localTechStack, setLocalTechStack] = useState({
+    recoil: Recoil,
+    socketio: SocketIO,
+  });
 
   // Number of techs imported + locals.
-  const [techCount, setTechCount] = useState(
-    techStack.length
-  );
+  const [techCount, setTechCount] = useState(techStack.length);
 
   // For tool tip
   const [hoveredTech, setHoveredTech] = useState(null);
@@ -73,8 +73,7 @@ function TechStack() {
               </div>
             ))}
 
-{/* {
-            Object.entries(localTechStack).map(([name, tech], index) => (
+            {Object.entries(localTechStack).map(([name, tech], index) => (
               <div
                 key={index} // Ensure each item has a unique key
                 className="relative inline-block m-[10px] max-w-[55px]"
@@ -82,7 +81,7 @@ function TechStack() {
                 onMouseLeave={() => setHoveredTech(null)}
               >
                 <img
-                  className="hover:cursor-pointer w-full" // Changed w-[100%] to w-full for consistent Tailwind styling
+                  className="hover:cursor-pointer w-full rounded-xl" // Changed w-[100%] to w-full for consistent Tailwind styling
                   src={tech}
                   alt={`${name} icon`} // Updated alt text for accessibility
                 />
@@ -92,9 +91,7 @@ function TechStack() {
                   </div>
                 )}
               </div>
-            ))
-            } */}            
-            
+            ))}
           </div>
         }
       </a>
