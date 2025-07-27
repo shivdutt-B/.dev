@@ -1,1 +1,1 @@
-Live Here [shivdutt.netlify.app](https://shivdutt.netlify.app/) 🎉🎉 
+Live Here [shivdutt.dev](https://shivdutt.dev) 🎉🎉 
