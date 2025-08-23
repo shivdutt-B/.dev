@@ -1,26 +1,27 @@
 import "./App.css";
-import Navbar from "./Components/Navbar";
-import Intro from "./Components/Intro";
-import TechStack from "./Components/TechStack";
-import Projects from "./Components/Projects";
-import Contact from "./Components/Contact";
-import Footer from "./Components/Footer";
-import AboutMe from "./Components/AboutMe";
-import DSA from "./Components/DSA";
+// import Navbar from "./components/Navbar";
+// import Intro from "./components/Intro";
+// import TechStack from "./components/TechStack";
+// import Projects from "./components/Projects";
+// import Contact from "./components/Contact";
+// import Footer from "./components/Footer";
+// import AboutMe from "./components/AboutMe";
+// import DSA from "./components/DSA";
+import Home from "./layouts/Home";
 
 function App() {
 
   return (
-    <>
-        <Navbar />
+    <div className="grow">
+        <Home />
+        {/* <Navbar />
         <Intro />
         <TechStack />
-        {/* <AboutMe /> */}
         <DSA />
         <Projects />
         <Contact />
-        <Footer />
-    </>
+        <Footer /> */}
+    </div>
   );
 }
 

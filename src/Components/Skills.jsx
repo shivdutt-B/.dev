@@ -3,7 +3,7 @@ import React, { useState } from "react";
 import Recoil from "../assets/techLogos/recoil.png";
 import SocketIO from "../assets/techLogos/socketio.png";
 
-function TechStack() {
+function Skills() {
   // Tech logos which we are imported from third party
   const [techStack, setTechStack] = useState([
     "html",
@@ -32,7 +32,7 @@ function TechStack() {
     "kafka",
     "redis",
     "redux",
-    "nginx"
+    "nginx",
   ]);
 
   // Tech logos which are locally present (didn't get these logo in the third party)
@@ -48,14 +48,15 @@ function TechStack() {
   const [hoveredTech, setHoveredTech] = useState(null);
 
   return (
-    <div className="my-20 mx-5 md:my-40 flex justify-center ">
-      <a className="max-w-[350px] w-[100%] text-center tech-stack-icon-conainer">
+    <div className="my-10 flex flex-col justify-center ">
+      <div className="font-calistoga text-gray-900 text-2xl mt-2 mb-4">Technical Skills & Expertise</div>
+      <a className="text-center tech-stack-icon-conainer">
         {
-          <div className={`grid grid-cols-5 grid-row-[${techCount / 5}]`}>
+          <div className={`grid grid-cols-9  grid-row-[${techCount / 9}] place-items-center`}>
             {techStack.map((tech, index) => (
               <div
                 key={index}
-                className="relative inline-block m-[10px] max-w-[55px]"
+                className="relative inline-block my-[5px]  max-w-[45px]"
                 onMouseEnter={() => setHoveredTech(tech)}
                 onMouseLeave={() => setHoveredTech(null)}
               >
@@ -76,12 +77,12 @@ function TechStack() {
             {Object.entries(localTechStack).map(([name, tech], index) => (
               <div
                 key={index} // Ensure each item has a unique key
-                className="relative inline-block m-[10px] max-w-[55px]"
+                className="relative inline-block my-[5px] max-w-[45px]"
                 onMouseEnter={() => setHoveredTech(name)}
                 onMouseLeave={() => setHoveredTech(null)}
               >
                 <img
-                  className="hover:cursor-pointer w-full rounded-xl" // Changed w-[100%] to w-full for consistent Tailwind styling
+                  className="hover:cursor-pointer w-[45px] rounded-xl" // Changed w-[100%] to w-full for consistent Tailwind styling
                   src={tech}
                   alt={`${name} icon`} // Updated alt text for accessibility
                 />
@@ -99,4 +100,4 @@ function TechStack() {
   );
 }
 
-export default TechStack;
+export default Skills;

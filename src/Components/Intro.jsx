@@ -1,70 +1,171 @@
 import React from "react";
-import Me from "../assets/displayPicture/main.png";
-import Resume from "../assets/resume/shivdutt.pdf";
 
 function Intro() {
   return (
-    <div className="flex justify-center my-32 px-5" id="intro">
-      <div className="grid md:grid-cols-2 grid-cols-1 max-w-[1200px] w-[100%] gap-8">
-        <div className="hidden justify-center order-2 md:flex">
-          <img
-            src={Me}
-            alt="Shivdutt Bhadakwad"
-            className="main-img max-w-[500px] w-[100%] md:max-w-[350px]"
-          />
-        </div>
+    <div>
+      <section>
+        <div className="flex flex-col">
+          {/* Heading */}
+          <div>
+            <h1 className="text-5xl text-gray-900 font-calistoga">
+              Shivdutt here 👀
+            </h1>
 
-        <div className="flex text-center justify-center flex-col order-1 md:text-left">
-          <h1 className="text-[clamp(30px,8vw,45px)] font-[var(--max-weight)] text-[var(--dark-txt)] leading-[40px]">
-            <span className="text-[var(--dark-txt)]">
-              Full Stack Development.
-            </span>
-            <br />
-            <span className="text-[var(--dark-txt)]">DevOps.</span>
-          </h1>
-          <p className="text-[var(--light-txt)] my-3 text-[clamp(16px,1.5vw,20px)] font-[var(--min-weight)] pr-5">
-            Hello, I'm <span className="font-semibold text-black">Shivdutt Bhadakwad. 🙄</span>
-          </p>
-          <a
-            href={Resume}
-            target="_blank"
-            rel="noopener noreferrer"
-            className="resume-button font-[var(--min-weight)] mx-[auto] bg-[var(--theme-color)] 
-                    text-white py-2 px-4 rounded-md hover:bg-purple-700 transition duration-300 shadow-[0_3px_8px_rgba(0,0,0,0.6)] w-[130px] md:mx-0 text-center"
-          >
-            <span className="pr-[5px]">Resume</span>
-            <svg
-              fill="#fff"
-              className="inline font-[var(--mid-weight)] mb-1"
-              width="18px"
-              height="19px"
-              viewBox="0 0 24 24"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
-              <g
-                id="SVGRepo_tracerCarrier"
-                stroke-linecap="round"
-                stroke-linejoin="round"
-              ></g>
-              <g id="SVGRepo_iconCarrier">
-                {" "}
-                <path
-                  fill-rule="evenodd"
-                  d="M5,2 L7,2 C7.55228475,2 8,2.44771525 8,3 C8,3.51283584 7.61395981,3.93550716 7.11662113,3.99327227 L7,4 L5,4 C4.48716416,4 4.06449284,4.38604019 4.00672773,4.88337887 L4,5 L4,19 C4,19.5128358 4.38604019,19.9355072 4.88337887,19.9932723 L5,20 L19,20 C19.5128358,20 19.9355072,19.6139598 19.9932723,19.1166211 L20,19 L20,17 C20,16.4477153 20.4477153,16 21,16 C21.5128358,16 21.9355072,16.3860402 21.9932723,16.8833789 L22,17 L22,19 C22,20.5976809 20.75108,21.9036609 19.1762728,21.9949073 L19,22 L5,22 C3.40231912,22 2.09633912,20.75108 2.00509269,19.1762728 L2,19 L2,5 C2,3.40231912 3.24891996,2.09633912 4.82372721,2.00509269 L5,2 L7,2 L5,2 Z M21,2 L21.081,2.003 L21.2007258,2.02024007 L21.2007258,2.02024007 L21.3121425,2.04973809 L21.3121425,2.04973809 L21.4232215,2.09367336 L21.5207088,2.14599545 L21.5207088,2.14599545 L21.6167501,2.21278596 L21.7071068,2.29289322 L21.7071068,2.29289322 L21.8036654,2.40469339 L21.8036654,2.40469339 L21.8753288,2.5159379 L21.9063462,2.57690085 L21.9063462,2.57690085 L21.9401141,2.65834962 L21.9401141,2.65834962 L21.9641549,2.73400703 L21.9641549,2.73400703 L21.9930928,2.8819045 L21.9930928,2.8819045 L22,3 L22,3 L22,9 C22,9.55228475 21.5522847,10 21,10 C20.4477153,10 20,9.55228475 20,9 L20,5.414 L13.7071068,11.7071068 C13.3466228,12.0675907 12.7793918,12.0953203 12.3871006,11.7902954 L12.2928932,11.7071068 C11.9324093,11.3466228 11.9046797,10.7793918 12.2097046,10.3871006 L12.2928932,10.2928932 L18.584,4 L15,4 C14.4477153,4 14,3.55228475 14,3 C14,2.44771525 14.4477153,2 15,2 L21,2 Z"
-                ></path>{" "}
-              </g>
-            </svg>
-          </a>
+            <h2 className="font-calistoga text-gray-900 text-2xl mt-2">
+              Full Stack Development &amp; DevOps
+            </h2>
+          </div>
+
+          {/* Location */}
+          <div>
+            <p className="flex items-center gap-1 mt-2">
+              <span className="text-xl">📍</span>
+              <span className="text-gray-800">Maharashtra, India</span>
+            </p>
+          </div>
+
+          {/* About */}
+          <div>
+            <p className="mt-3 text-gray-700">
+              I’m a{" "}
+              <span className="font-semibold text-blue-600">
+                computer engineering student
+              </span>{" "}
+              who loves building{" "}
+              <span className="font-semibold text-blue-600">
+                full-stack applications
+              </span>{" "}
+              that scale. From crafting{" "}
+              <span className="font-semibold text-blue-600">
+                deployment platforms
+              </span>{" "}
+              to creating{" "}
+              <span className="font-semibold text-blue-600">
+                monitoring tools
+              </span>
+              , I enjoy turning ideas into real products while exploring{" "}
+              <span className="font-semibold text-blue-600">
+                modern web & DevOps tech
+              </span>
+              .
+            </p>
+          </div>
+
+          {/* Resume Link */}
+          <div>
+            <div className="flex items-end gap-1 mt-4 text-blue-600 group">
+  <p className="text-gray-800">
+    <a
+      target="_blank"
+      rel="noopener noreferrer"
+      className="font-calistoga font-[100] underline transition-colors duration-300 group-hover:text-blue-700"
+      href="src/assets/resume/shivdutt.pdf"
+    >
+      Check out my Resume
+    </a>
+  </p>
+  <svg
+    xmlns="http://www.w3.org/2000/svg"
+    width="24"
+    height="24"
+    viewBox="0 0 24 24"
+    fill="none"
+    stroke="currentColor"
+    strokeWidth="2"
+    strokeLinecap="round"
+    strokeLinejoin="round"
+    className="lucide lucide-arrow-up-right size-5 text-blue-600 transition-transform duration-300 group-hover:translate-x-1 group-hover:-translate-y-1"
+    aria-hidden="true"
+  >
+    <path d="M7 7h10v10"></path>
+    <path d="M7 17 17 7"></path>
+  </svg>
+</div>
+
+          </div>
+
+          {/* Social Links */}
+          <div>
+            <section className="mt-8 flex items-center gap-8">
+              <section className="flex gap-6">
+                {/* LinkedIn */}
+                <a
+                  href="https://www.linkedin.com/in/omkarbhosale-dev"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-gray-600 hover:text-gray-900 transition"
+                  title="LinkedIn"
+                >
+                  <span className="sr-only">LinkedIn</span>
+                  <svg
+                    stroke="currentColor"
+                    fill="none"
+                    strokeWidth="2"
+                    viewBox="0 0 24 24"
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    height="20"
+                    width="20"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path>
+                    <rect x="2" y="9" width="4" height="12"></rect>
+                    <circle cx="4" cy="4" r="2"></circle>
+                  </svg>
+                </a>
+
+                {/* GitHub */}
+                <a
+                  href="https://github.com/omkarbhosale-dev"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-gray-600 hover:text-gray-900 transition"
+                  title="GitHub"
+                >
+                  <span className="sr-only">GitHub</span>
+                  <svg
+                    stroke="currentColor"
+                    fill="none"
+                    strokeWidth="2"
+                    viewBox="0 0 24 24"
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    height="20"
+                    width="20"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path>
+                  </svg>
+                </a>
+
+                {/* Twitter */}
+                <a
+                  href="https://x.com/omkaar_dev"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-gray-600 hover:text-gray-900 transition"
+                  title="Twitter"
+                >
+                  <span className="sr-only">Twitter</span>
+                  <svg
+                    stroke="currentColor"
+                    fill="none"
+                    strokeWidth="2"
+                    viewBox="0 0 24 24"
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    height="20"
+                    width="20"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path d="M23 3a10.9 10.9 0 0 1-3.14 1.53 4.48 4.48 0 0 0-7.86 3v1A10.66 10.66 0 0 1 3 4s-4 9 5 13a11.64 11.64 0 0 1-7 2c9 5 20 0 20-11.5a4.5 4.5 0 0 0-.08-.83A7.72 7.72 0 0 0 23 3z"></path>
+                  </svg>
+                </a>
+              </section>
+            </section>
+          </div>
         </div>
-        <div className="flex justify-center md:justify-center md:hidden">
-          <img
-            src={Me}
-            alt="Shivdutt Bhadakwad"
-            className="max-w-[300px] w-[100%] md:max-w-[350px]"
-          />
-        </div>
-      </div>
+      </section>
     </div>
   );
 }
