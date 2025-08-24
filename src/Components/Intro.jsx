@@ -1,5 +1,6 @@
 import DP from "../assets/displayPicture/me.jpeg";
 import BlurFade from "./magicui/blur-fade";
+import Resume from "../assets/resume/shivdutt.pdf";
 
 function Intro() {
   return (
@@ -75,7 +76,7 @@ function Intro() {
                   target="_blank"
                   rel="noopener noreferrer"
                   className="font-calistoga font-[100] underline transition-colors duration-300 group-hover:text-blue-700 text-sm sm:text-base truncate"
-                  href="src/assets/resume/shivdutt.pdf"
+                  href={Resume}
                 >
                   Check out my Resume
                 </a>
