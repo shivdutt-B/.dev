@@ -1,10 +1,16 @@
 import React from 'react'
-import Intro from '../components/Intro'
-import Skills from '../components/Skills'
-import Projects from '../components/Projects'
-import { DSAStats } from '../components/DSA'
-import {AppNavbar} from '../components/Navbar'
-import Contact from '../components/Contact'
+// import Intro from '../components/Intro'
+// import Skills from '../components/Skills'
+// import Projects from '../components/Projects'
+// import { DSAStats } from '../components/DSA'
+// import {AppNavbar} from '../components/Navbar'
+// import Contact from '../components/Contact'
+import Intro from '../components/Intro.jsx'
+import Skills from '../components/Skills.jsx'
+import Projects from '../components/Projects.jsx'
+import { DSAStats } from '../components/DSA.jsx'
+import { AppNavbar } from '../components/Navbar.jsx'
+import Contact from '../components/Contact.jsx'
 
 function Home() {
   return (
