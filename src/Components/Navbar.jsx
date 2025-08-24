@@ -44,6 +44,7 @@ export function AppNavbar() {
                   <TooltipTrigger asChild>
                     <a
                       href={social.url}
+                      target="_blank"
                       className={cn(
                         buttonVariants({ variant: "ghost", size: "icon" }),
                         "size-12"

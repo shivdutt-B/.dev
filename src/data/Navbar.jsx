@@ -21,7 +21,7 @@ export const Contact = {
     },
     Codolio: {
       name: "Codolio",
-      url: "https://codolio.com/CatFish",
+      url: "https://codolio.com/profile/CatFish",
       icon: Code, // adjust to an appropriate icon if available
       navbar: true,
     },
