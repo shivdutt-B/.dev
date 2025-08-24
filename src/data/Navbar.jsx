@@ -1,4 +1,4 @@
-import { Icons } from "../components/ui/icon";
+import { Icons } from "../Components/ui/icon";
 import { HomeIcon, Linkedin, Code, Instagram } from "lucide-react"; // Adjust if needed for icon types in your setup
 
 export const Navbar = [{ href: "/", icon: HomeIcon, label: "Home" }];

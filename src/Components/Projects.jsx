@@ -1,5 +1,5 @@
 import React from "react";
-import BlurFade from "../components/magicui/blur-fade";
+import BlurFade from "./magicui/blur-fade";
 import { ProjectCard } from "./ProjectCard";
 import { PROJECTS } from "../data/Projects";
 

@@ -23,7 +23,7 @@ import heimdallSS3 from "../assets/project-demo/heimdall/ss3.png";
 import heimdallSS4 from "../assets/project-demo/heimdall/ss4.png";  
 import heimdallSS5 from "../assets/project-demo/heimdall/ss5.png";
 import heimdallArch from "../assets/project-demo/heimdall/heimdall-architecture.jpg";
-import { Icons } from "../components/ui/icon";
+import { Icons } from "../Components/ui/icon";
 
 // import { HomeIcon, NotebookIcon } from "lucide-react";
 

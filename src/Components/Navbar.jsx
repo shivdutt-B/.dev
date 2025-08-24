@@ -1,7 +1,7 @@
-import { Dock, DockIcon } from "@/components/magicui/dock";
-import { buttonVariants } from "@/components/ui/button";
-import { Separator } from "@/components/ui/separator";
-import { Tooltip, TooltipContent, TooltipTrigger, TooltipProvider } from "@/components/ui/tooltip";
+import { Dock, DockIcon } from "@/Components/magicui/dock";
+import { buttonVariants } from "@/Components/ui/button";
+import { Separator } from "@/Components/ui/separator";
+import { Tooltip, TooltipContent, TooltipTrigger, TooltipProvider } from "@/Components/ui/tooltip";
 import { Navbar, Contact } from "../data/Navbar";
 import { cn } from "@/lib/utils";
 
