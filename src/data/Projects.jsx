@@ -31,7 +31,6 @@ export const PROJECTS = [
   {
     id: "gorr",
     title: "Gorr",
-    video: "https://www.youtube.com/watch?v=kSnP80ctjlw", // YouTube embed link
     screenshots: [
       ss1,
       ss2,
@@ -66,18 +65,18 @@ export const PROJECTS = [
     links: [
         {
           type: "Website",
-          href: "https://automatic.chat",
+          href: "https://gorr-phi.vercel.app/",
           icon: <Icons.globe className="size-3" />,
         },
         {
           type: "Github",
           icon: <Icons.github className="h-4 w-4" />,
-          href: "https://github.com/cryptotrends/cryptotrends",
+          href: "https://github.com/shivdutt-B/gorr",
         },
          {
           type: "Youtube",
           icon: <Icons.youtube className="h-4 w-4" />,
-          href: "https://github.com/cryptotrends/cryptotrends",
+          href: "https://www.youtube.com/watch?v=kSnP80ctjlw",
         },
       ],
   },
@@ -120,18 +119,18 @@ export const PROJECTS = [
     links: [
         {
           type: "Website",
-          href: "https://automatic.chat",
+          href: "https://heimdall-pings.vercel.app/",
           icon: <Icons.globe className="size-3" />,
         },
         {
           type: "Github",
           icon: <Icons.github className="h-4 w-4" />,
-          href: "https://github.com/cryptotrends/cryptotrends",
+          href: "https://github.com/shivdutt-B/heimdall",
         },
         {
           type: "Youtube",
           icon: <Icons.youtube className="h-4 w-4" />,
-          href: "https://github.com/cryptotrends/cryptotrends",
+          href: "https://www.youtube.com/watch?v=-B-Hw2NKQGc",
         },
       ],
   },

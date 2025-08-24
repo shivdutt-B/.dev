@@ -25,21 +25,15 @@ export const Contact = {
       icon: Code, // adjust to an appropriate icon if available
       navbar: true,
     },
-    // Website: {
-    //   name: "Website",
-    //   url: "https://shivdutt.dev",
-    //   icon: Icons.globe, // or another fitting icon
-    //   navbar: true,
-    // },
     Twitter: {
       name: "Twitter",
-      url: "https://twitter.com/shivdutt_B",
+      url: "https://x.com/shivdutt059",
       icon: Icons.x,
       navbar: true,
     },
     Instagram: {
       name: "Instagram",
-      url: "https://instagram.com/shivdutt_b",
+      url: "https://www.instagram.com/_shivdutt._/?hl=en",
       icon: Instagram,
       navbar: true,
     },

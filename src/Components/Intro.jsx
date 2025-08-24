@@ -1,20 +1,22 @@
-import React from "react";
-
 function Intro() {
   return (
     <div>
       <section>
         <div className="flex flex-col">
-          {/* Heading */}
-          <div>
-            <h1 className="text-5xl text-gray-900 font-calistoga">
-              Shivdutt here 🗿 
-            </h1>
+          <div className="mb-6">
+  <div className="flex items-center justify-between">
+    <div>
+      <h1 className="text-5xl text-gray-900 font-calistoga">Shivdutt here 🗿</h1>
+      <h2 className="font-calistoga text-gray-900 text-2xl mt-2">Full Stack Development & DevOps</h2>
+    </div>
+    <img
+      src="https://media.licdn.com/dms/image/v2/D4D03AQGSJr_G0ZHyhA/profile-displayphoto-shrink_400_400/profile-displayphoto-shrink_400_400/0/1722624342969?e=1758758400&v=beta&t=smdpXIE5P_4ElQM3shBSotOGpPJ8Zdvw4cwMZpvblT0"
+      alt="Shivdutt - Full Stack Developer"
+      className="w-32 h-32 rounded-full object-cover border-2 border-gray-200 ml-4"
+    />
+  </div>
+</div>
 
-            <h2 className="font-calistoga text-gray-900 text-2xl mt-2">
-              Full Stack Development &amp; DevOps
-            </h2>
-          </div>
 
           {/* Location */}
           <div>
@@ -27,27 +29,11 @@ function Intro() {
           {/* About */}
           <div>
             <p className="mt-3 text-gray-700">
-              I’m a{" "}
-              <span className="font-semibold text-blue-600">
-                computer engineering student
-              </span>{" "}
-              who loves building{" "}
-              <span className="font-semibold text-blue-600">
-                full-stack applications
-              </span>{" "}
-              that scale. From crafting{" "}
-              <span className="font-semibold text-blue-600">
-                deployment platforms
-              </span>{" "}
-              to creating{" "}
-              <span className="font-semibold text-blue-600">
-                monitoring tools
-              </span>
-              , I enjoy turning ideas into real products while exploring{" "}
-              <span className="font-semibold text-blue-600">
-                modern web & DevOps tech
-              </span>
-              .
+              I’m a <span className="font-semibold text-blue-600">computer engineering student</span> who loves building{" "}
+              <span className="font-semibold text-blue-600">full-stack applications</span> that scale. From crafting{" "}
+              <span className="font-semibold text-blue-600">deployment platforms</span> to creating{" "}
+              <span className="font-semibold text-blue-600">monitoring tools</span>, I enjoy turning ideas into real
+              products while exploring <span className="font-semibold text-blue-600">modern web & DevOps tech</span>.
             </p>
           </div>
 
@@ -89,7 +75,7 @@ function Intro() {
               <section className="flex gap-6">
                 {/* LinkedIn */}
                 <a
-                  href="https://www.linkedin.com/in/omkarbhosale-dev"
+                  href="https://www.linkedin.com/in/shivdutt-bhadakwad-07a462280/"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="text-gray-600 hover:text-gray-900 transition"
@@ -115,7 +101,7 @@ function Intro() {
 
                 {/* GitHub */}
                 <a
-                  href="https://github.com/omkarbhosale-dev"
+                  href="https://github.com/shivdutt-B"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="text-gray-600 hover:text-gray-900 transition"
@@ -139,7 +125,7 @@ function Intro() {
 
                 {/* Twitter */}
                 <a
-                  href="https://x.com/omkaar_dev"
+                  href="https://x.com/shivdutt059"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="text-gray-600 hover:text-gray-900 transition"
@@ -166,7 +152,7 @@ function Intro() {
         </div>
       </section>
     </div>
-  );
+  )
 }
 
-export default Intro;
+export default Intro
