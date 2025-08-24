@@ -13,6 +13,7 @@ import {
   Zap,
   CheckCheck,
 } from "lucide-react";
+import BlurFade from "./magicui/blur-fade";
 
 export function DSAStats() {
   const [data, setData] = useState(null);
@@ -117,6 +118,7 @@ export function DSAStats() {
   };
 
   return (
+    <BlurFade>
     <div className="w-full my-10">
       <div className="font-calistoga text-gray-900 text-2xl mt-2 mb-2 flex flex-col gap-0 xxs:flex-row xxs:items-center xxs:justify-between">
         <div className="font-calistoga text-gray-900 text-md">DSA Stats</div>
@@ -151,27 +153,6 @@ export function DSAStats() {
           </div>
         </div>
       </div>
-
-      {/* <div className="text-center space-y-3">
-        <Avatar className="w-16 h-16 mx-auto">
-          <AvatarImage src={data.imageUrl || "/placeholder.svg"} alt={data.profileName} />
-          <AvatarFallback className="bg-muted text-foreground">
-            {data.firstName[0]}
-            {data.secondName[0]}
-          </AvatarFallback>
-        </Avatar>
-        <div>
-          <h1 className="text-2xl font-bold text-foreground">
-            {data.firstName} {data.secondName}
-          </h1>
-          <p className="text-muted-foreground">@{data.profileName}</p>
-          <div className="flex items-center justify-center gap-2 mt-1">
-            <CalendarDays className="w-4 h-4 text-muted-foreground" />
-            <span className="text-sm text-muted-foreground">{data.profileViews} profile views</span>
-          </div>
-        </div>
-      </div> */}
-
       <div className="grid grid-cols-2 gap-3">
         <Card className="border p-3 transition-shadow hover:shadow-md">
           <CardHeader className="flex flex-row items-center justify-between space-y-0 pb-2">
@@ -340,5 +321,6 @@ export function DSAStats() {
         </CardContent>
       </Card>
     </div>
+    </BlurFade>
   );
 }

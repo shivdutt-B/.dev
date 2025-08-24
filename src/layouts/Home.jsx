@@ -8,7 +8,7 @@ import Contact from '../components/Contact'
 
 function Home() {
   return (
-    <div className='min-h-screen bg-background font-sans antialiased max-w-2xl mx-auto py-12 sm:py-24 px-6 __variable_d65c78'>
+    <div className='min-h-screen bg-background font-sans antialiased max-w-2xl mx-auto py-12 sm:py-24 px-6'>
       <AppNavbar />
       <Intro />
       <Skills />

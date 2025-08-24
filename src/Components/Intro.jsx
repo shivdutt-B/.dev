@@ -1,9 +1,9 @@
-// import DP from "../assets/displayPicture/pot1-Photoroom.png";
-// import DP from "../assets/displayPicture/pot1-Photoroom.png";
-import DP from "../assets/displayPicture/pot1aa.jpeg";
+import DP from "../assets/displayPicture/me.jpeg";
+import BlurFade from "./magicui/blur-fade";
 
 function Intro() {
   return (
+    <BlurFade>
     <div className="">
       <section>
         <div className="flex flex-col max-w-4xl mx-auto">
@@ -19,7 +19,7 @@ function Intro() {
                   Full Stack Development & DevOps
                 </h2>
               </div>
-              
+
               {/* Profile image */}
               <div className="flex-shrink-0">
                 <img
@@ -42,11 +42,28 @@ function Intro() {
           {/* About */}
           <div className="">
             <p className="mt-3 text-gray-700 text-sm sm:text-base leading-relaxed max-w-3xl mx-auto sm:mx-0">
-              I'm a <span className="font-semibold text-blue-600">computer engineering student</span> who loves building{" "}
-              <span className="font-semibold text-blue-600">full-stack applications</span> that scale. From crafting{" "}
-              <span className="font-semibold text-blue-600">deployment platforms</span> to creating{" "}
-              <span className="font-semibold text-blue-600">monitoring tools</span>, I enjoy turning ideas into real
-              products while exploring <span className="font-semibold text-blue-600">modern web & DevOps tech</span>.
+              I’m a{" "}
+              <span className="font-semibold text-blue-600">
+                computer engineering student
+              </span>{" "}
+              passionate about building{" "}
+              <span className="font-semibold text-blue-600">
+                full-stack applications
+              </span>{" "}
+              that scale seamlessly. From developing{" "}
+              <span className="font-semibold text-blue-600">
+                deployment platforms
+              </span>{" "}
+              to designing{" "}
+              <span className="font-semibold text-blue-600">
+                monitoring tools
+              </span>
+              , I love transforming ideas into impactful products while
+              continuously exploring{" "}
+              <span className="font-semibold text-blue-600">
+                modern web and DevOps technologies
+              </span>
+              .
             </p>
           </div>
 
@@ -165,7 +182,8 @@ function Intro() {
         </div>
       </section>
     </div>
-  )
+    </BlurFade>
+  );
 }
 
-export default Intro
+export default Intro;

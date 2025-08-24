@@ -2,6 +2,7 @@ import React, { useState } from "react";
 // import local logos for tech
 import Recoil from "../assets/techLogos/recoil.png";
 import SocketIO from "../assets/techLogos/socketio.png";
+import BlurFade from "./magicui/blur-fade";
 
 function Skills() {
   // Tech logos which we are imported from third party
@@ -48,6 +49,7 @@ function Skills() {
   const [hoveredTech, setHoveredTech] = useState(null);
 
   return (
+    <BlurFade>
     <div className="my-10 flex flex-col justify-center">
       <div className="font-calistoga text-gray-900 text-2xl mt-2 mb-4">
         Technical Skills
@@ -108,6 +110,7 @@ function Skills() {
         }
       </a>
     </div>
+    </BlurFade>
   );
 }
 

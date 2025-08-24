@@ -7,6 +7,7 @@ function Projects() {
   const BLUR_FADE_DELAY = 0.04;
 
   return (
+    <BlurFade>
     <div>
       <div className="ont-calistoga text-gray-900 text-2xl mt-2 mb-2 flex flex-col gap-0 xxs:flex-row xxs:items-center xxs:justify-between">
         <div className="font-calistoga text-gray-900 text-md">Projects</div>
@@ -62,6 +63,7 @@ function Projects() {
         ))}
       </div>
     </div>
+    </BlurFade>
   );
 }
 

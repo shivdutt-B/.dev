@@ -4,6 +4,7 @@ import React, { useState } from "react";
 import { Card, CardContent } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { Mail, Copy, Check } from "lucide-react";
+import BlurFade from "./magicui/blur-fade";
 
 export default function Contact() {
   const [isCopied, setIsCopied] = useState(false);
@@ -22,6 +23,7 @@ export default function Contact() {
   };
 
   return (
+    <BlurFade>
     <div className="w-full max-w-2xl mx-auto space-y-4 p-3 border rounded-lg transition-shadow hover:shadow-md">
       {/* Header Section */}
       <div className="font-calistoga text-gray-900 text-2xl mt-2 mb-2 flex flex-col gap-0 xxs:flex-row xxs:items-center xxs:justify-between">
@@ -94,5 +96,6 @@ export default function Contact() {
         </CardContent>
       </Card>
     </div>
+      </BlurFade>
   );
 }
