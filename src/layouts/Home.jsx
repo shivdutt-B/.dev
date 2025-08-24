@@ -1,6 +1,6 @@
 import React from 'react'
 // import Intro from '../components/Intro'
-import Skills from '../components/Skills'
+import Skills from 'src/components/Skills'
 import Projects from '../Components/Projects'
 import { DSAStats } from '@/components/DSA'
 import {AppNavbar} from '../components/Navbar'
