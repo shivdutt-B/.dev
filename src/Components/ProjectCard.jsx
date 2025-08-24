@@ -1,3 +1,4 @@
+import React, { useEffect, useState } from "react";
 import { Badge } from "../components/ui/badge";
 import {
   Card,
@@ -7,7 +8,7 @@ import {
   CardTitle,
 } from "../components/ui/card";
 import { cn } from "../lib/utils";
-import { ImageIcon, LinkIcon, ExternalLink } from "lucide-react";
+import { LinkIcon } from "lucide-react";
 
 export function ProjectCard({
   title,
@@ -18,16 +19,28 @@ export function ProjectCard({
   image,
   video,
   links,
+  screenshots = [],
   className,
 }) {
+  const [currentIndex, setCurrentIndex] = useState(0);
+
+  useEffect(() => {
+    if (!screenshots || screenshots.length === 0) return;
+
+    const interval = setInterval(() => {
+      setCurrentIndex((prev) => (prev + 1) % screenshots.length);
+    }, 2000);
+
+    return () => clearInterval(interval);
+  }, [screenshots]);
+
   return (
     <Card className="flex flex-col overflow-hidden border hover:shadow-lg transition-all duration-300 ease-out h-full">
-      {/* Use a real <a> for navigation */}
       <a
         href={href || "#"}
         target="_blank"
         rel="noopener noreferrer"
-        className={cn("block cursor-pointer", className)}
+        className={cn("block cursor-pointer relative h-40 w-full", className)}
       >
         {video && (
           <video
@@ -36,17 +49,31 @@ export function ProjectCard({
             loop
             muted
             playsInline
-            className="pointer-events-none mx-auto h-40 w-full object-cover object-top"
+            className="pointer-events-none absolute inset-0 h-full w-full object-cover object-top"
           />
         )}
-        {image && (
-          <img
-            src={image}
-            alt={title}
-            width={500}
-            height={300}
-            className="h-40 w-full overflow-hidden object-cover object-top"
-          />
+
+        {/* Screenshots Crossfade */}
+        {screenshots && screenshots.length > 0 ? (
+          screenshots.map((src, index) => (
+            <img
+              key={index}
+              src={src}
+              alt={`${title}-screenshot-${index}`}
+              className={cn(
+                "absolute inset-0 h-full w-full object-cover object-top transition-opacity duration-700",
+                index === currentIndex ? "opacity-100" : "opacity-0"
+              )}
+            />
+          ))
+        ) : (
+          image && (
+            <img
+              src={image}
+              alt={title}
+              className="absolute inset-0 h-full w-full object-cover object-top"
+            />
+          )
         )}
       </a>
 
@@ -58,7 +85,7 @@ export function ProjectCard({
               {link.replace("https://", "").replace("www.", "").replace("/", "")}
             </div>
           )}
-          <div className="prose max-w-full text-pretty font-sans text-xs text-muted-foreground dark:prose-invert">
+          <div className="prose max-w-full text-pretty font-sans text-xs text-muted-foreground dark:prose-invert text-[14px]">
             {description}
           </div>
         </div>
@@ -69,7 +96,7 @@ export function ProjectCard({
           <div className="mt-2 flex flex-wrap gap-1">
             {tags.filter(Boolean).map((tag) => (
               <Badge
-                className="px-1 py-0 text-[10px]"
+                className="px-1 py-0 text-[11px] rounded-xs"
                 variant="secondary"
                 key={tag}
               >
@@ -90,7 +117,7 @@ export function ProjectCard({
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                <Badge className="flex gap-2 px-2 py-1 text-[10px]">
+                <Badge className="flex gap-2 px-2 py-1 text-[10px] rounded-sm">
                   {link.icon || <LinkIcon size={12} />}
                   {link.type}
                 </Badge>

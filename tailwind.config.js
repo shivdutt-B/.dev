@@ -7,6 +7,9 @@ export default {
   ],
   theme: {
   	extend: {
+		screens: {
+        'xxs': '300px', // custom breakpoint
+      },
   		fontFamily: {
   			calistoga: [
   				'Calistoga',

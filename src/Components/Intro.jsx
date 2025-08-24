@@ -8,7 +8,7 @@ function Intro() {
           {/* Heading */}
           <div>
             <h1 className="text-5xl text-gray-900 font-calistoga">
-              Shivdutt here 👀
+              Shivdutt here 🗿 
             </h1>
 
             <h2 className="font-calistoga text-gray-900 text-2xl mt-2">
@@ -54,34 +54,33 @@ function Intro() {
           {/* Resume Link */}
           <div>
             <div className="flex items-end gap-1 mt-4 text-blue-600 group">
-  <p className="text-gray-800">
-    <a
-      target="_blank"
-      rel="noopener noreferrer"
-      className="font-calistoga font-[100] underline transition-colors duration-300 group-hover:text-blue-700"
-      href="src/assets/resume/shivdutt.pdf"
-    >
-      Check out my Resume
-    </a>
-  </p>
-  <svg
-    xmlns="http://www.w3.org/2000/svg"
-    width="24"
-    height="24"
-    viewBox="0 0 24 24"
-    fill="none"
-    stroke="currentColor"
-    strokeWidth="2"
-    strokeLinecap="round"
-    strokeLinejoin="round"
-    className="lucide lucide-arrow-up-right size-5 text-blue-600 transition-transform duration-300 group-hover:translate-x-1 group-hover:-translate-y-1"
-    aria-hidden="true"
-  >
-    <path d="M7 7h10v10"></path>
-    <path d="M7 17 17 7"></path>
-  </svg>
-</div>
-
+              <p className="text-gray-800">
+                <a
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="font-calistoga font-[100] underline transition-colors duration-300 group-hover:text-blue-700"
+                  href="src/assets/resume/shivdutt.pdf"
+                >
+                  Check out my Resume
+                </a>
+              </p>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                strokeWidth="2"
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                className="lucide lucide-arrow-up-right size-5 text-blue-600 transition-transform duration-300 group-hover:translate-x-1 group-hover:-translate-y-1"
+                aria-hidden="true"
+              >
+                <path d="M7 7h10v10"></path>
+                <path d="M7 17 17 7"></path>
+              </svg>
+            </div>
           </div>
 
           {/* Social Links */}
