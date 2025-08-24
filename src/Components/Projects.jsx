@@ -11,7 +11,7 @@ function Projects() {
       <div className="ont-calistoga text-gray-900 text-2xl mt-2 mb-2 flex flex-col gap-0 xxs:flex-row xxs:items-center xxs:justify-between">
         <div className="font-calistoga text-gray-900 text-md">Projects</div>
         <div>
-          <div className="flex items-end gap-1 text-blue-600 group">
+          <div className="flex items-end gap-1 text-blue-600 group cursor-pointer">
             <p className="text-gray-800">
               <a
                 target="_blank"

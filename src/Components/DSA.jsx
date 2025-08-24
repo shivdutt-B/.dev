@@ -118,10 +118,10 @@ export function DSAStats() {
 
   return (
     <div className="w-full my-10">
-      <div className="ont-calistoga text-gray-900 text-2xl mt-2 mb-2 flex flex-col gap-0 xxs:flex-row xxs:items-center xxs:justify-between">
+      <div className="font-calistoga text-gray-900 text-2xl mt-2 mb-2 flex flex-col gap-0 xxs:flex-row xxs:items-center xxs:justify-between">
         <div className="font-calistoga text-gray-900 text-md">DSA Stats</div>
         <div>
-          <div className="flex items-end gap-1 text-blue-600 group">
+          <div className="flex items-end gap-1 text-blue-600 group cursor-pointer">
             <p className="text-gray-800">
               <a
                 target="_blank"
@@ -180,37 +180,37 @@ export function DSAStats() {
           </CardHeader>
           <CardContent>
             <div className="text-xl font-bold">{totalQuestions}</div>
-            <p className="text-xs text-muted-foreground">All platforms</p>
+            <p className="text-xs text-muted-foreground truncate">All platforms</p>
           </CardContent>
         </Card>
 
         <Card className="border p-3 transition-shadow hover:shadow-md">
           <CardHeader className="flex flex-row items-center justify-between space-y-0 pb-2">
-            <CardTitle className="text-xs font-medium">Max Streak</CardTitle>
+            <CardTitle className="text-xs font-medium truncate">Max Streak</CardTitle>
             <Zap className="h-4 w-4 text-muted-foreground" />
           </CardHeader>
           <CardContent>
             <div className="text-xl font-bold">{maxStreak}</div>
-            <p className="text-xs text-muted-foreground">Days</p>
+            <p className="text-xs text-muted-foreground truncate">Days</p>
           </CardContent>
         </Card>
 
         <Card className="border p-3 transition-shadow hover:shadow-md">
           <CardHeader className="flex flex-row items-center justify-between space-y-0 pb-2">
-            <CardTitle className="text-xs font-medium">Platforms</CardTitle>
+            <CardTitle className="text-xs font-medium truncate">Platforms</CardTitle>
             <Trophy className="h-4 w-4 text-muted-foreground" />
           </CardHeader>
           <CardContent>
             <div className="text-xl font-bold">
               {data.platformProfiles.platformProfiles.length}
             </div>
-            <p className="text-xs text-muted-foreground">Active</p>
+            <p className="text-xs text-muted-foreground truncate">Active</p>
           </CardContent>
         </Card>
 
         <Card className="border p-3 transition-shadow hover:shadow-md">
           <CardHeader className="flex flex-row items-center justify-between space-y-0 pb-2">
-            <CardTitle className="text-xs font-medium">Languages</CardTitle>
+            <CardTitle className="text-xs font-medium truncate">Languages</CardTitle>
             <Target className="h-4 w-4 text-muted-foreground" />
           </CardHeader>
           <CardContent>
@@ -223,7 +223,7 @@ export function DSAStats() {
       <Card className="border p-3 transition-shadow hover:shadow-md my-3">
         <CardHeader>
           <CardTitle className="flex items-center gap-2 text-base">
-            <TrendingUp className="w-4 h-4" />
+            <TrendingUp className="w-4 h-4 truncate" />
             Problem Difficulty
           </CardTitle>
         </CardHeader>
@@ -281,28 +281,15 @@ export function DSAStats() {
                     {profile.platform[0].toUpperCase()}
                   </AvatarFallback>
                 </Avatar>
-                <span className="capitalize">{profile.platform}</span>
-                <span className="text-muted-foreground font-normal flex items-center gap-1">
+                <span className="capitalize truncate">{profile.platform}</span>
+                <span className="text-muted-foreground font-normal flex items-center gap-1 truncate">
                   @{profile.userStats.handle}
-                  {/* <CheckCheck className="w-4 h-4 text-blue-500" /> */}
-                  {/* <span className="inline-flex items-center justify-center w-4 h-4 rounded-full bg-green-500">
-    <svg
-      xmlns="http://www.w3.org/2000/svg"
-      className="w-3 h-3 text-white"
-      fill="none"
-      viewBox="0 0 24 24"
-      stroke="currentColor"
-      strokeWidth={3}
-    >
-      <path strokeLinecap="round" strokeLinejoin="round" d="M5 13l4 4L19 7" />
-    </svg>
-    </span> */}
                 </span>
               </CardTitle>
             </CardHeader>
             <CardContent className="pt-0">
               <div className="flex justify-between items-center mb-2">
-                <span className="text-sm text-muted-foreground">
+                <span className="text-sm text-muted-foreground truncate">
                   Problems Solved
                 </span>
                 <span className="font-medium">
@@ -310,7 +297,7 @@ export function DSAStats() {
                 </span>
               </div>
               <div className="flex justify-between items-center mb-3">
-                <span className="text-sm text-muted-foreground">
+                <span className="text-sm text-muted-foreground truncate">
                   Max Streak
                 </span>
                 <span className="font-medium">

@@ -48,15 +48,26 @@ function Skills() {
   const [hoveredTech, setHoveredTech] = useState(null);
 
   return (
-    <div className="my-10 flex flex-col justify-center ">
-      <div className="font-calistoga text-gray-900 text-2xl mt-2 mb-4">Technical Skills & Expertise</div>
+    <div className="my-10 flex flex-col justify-center">
+      <div className="font-calistoga text-gray-900 text-2xl mt-2 mb-4">
+        Technical Skills
+      </div>
       <a className="text-center tech-stack-icon-conainer">
         {
-          <div className={`grid grid-cols-9  grid-row-[${techCount / 9}] place-items-center`}>
+          // <div className={`grid grid-cols-9  grid-row-[${techCount / 90}] place-items-center`}>
+          <div
+            className={`
+    grid 
+    grid-cols-9              /* Default: 9 columns */
+    xs:grid-cols-5           /* For <=400px: 5 columns */
+    vxs:grid-cols-4           /* For <=400px: 4 columns */
+    place-items-center
+  `}
+          >
             {techStack.map((tech, index) => (
               <div
                 key={index}
-                className="relative inline-block my-[5px]  max-w-[45px]"
+                className="relative inline-block m-[5px]  max-w-[45px]"
                 onMouseEnter={() => setHoveredTech(tech)}
                 onMouseLeave={() => setHoveredTech(null)}
               >

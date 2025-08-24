@@ -8,7 +8,9 @@ export default {
   theme: {
   	extend: {
 		screens: {
-        'xxs': '300px', // custom breakpoint
+        'xxs': '300px', 
+		'xs': { max: "450px" }, // for skill icons to set grid cols
+		'vxs': {max: "250px"}
       },
   		fontFamily: {
   			calistoga: [
