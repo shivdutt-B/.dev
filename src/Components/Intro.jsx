@@ -1,4 +1,4 @@
-import DP from "../assets/displayPicture/me.jpeg";
+import DP from "../assets/displayPicture/me.png";
 import BlurFade from "./magicui/blur-fade";
 import Resume from "../assets/resume/shivdutt.pdf";
 
