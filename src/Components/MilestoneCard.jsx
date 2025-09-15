@@ -28,7 +28,7 @@ const MilestoneCard = ({
 
   return (
     <Card 
-      className=" py-2 cursor-pointer"
+      className="py-2 cursor-pointer"
       onClick={handleClick}
     >
       <CardHeader className="pb-3">
@@ -46,7 +46,7 @@ const MilestoneCard = ({
           <div className="flex-1 min-w-0">
             <div className="flex items-center justify-between gap-x-2">
               <div className="flex items-center gap-2 min-w-0 flex-1">
-                <h3 className="font-semibold text-sm truncate">
+                <h3 className="font-bold text-base text-gray-900 truncate">
                   {title}
                 </h3>
                 <ChevronRightIcon
@@ -56,13 +56,14 @@ const MilestoneCard = ({
                   )}
                 />
               </div>
-              <div className="text-sm text-gray-600 text-right whitespace-nowrap">
+              <div className="text-sm font-semibold text-gray-900 text-right whitespace-nowrap">
                 {period}
               </div>
             </div>
             {subtitle && (
-              <div className="text-sm text-black text-muted-foreground mt-1 truncate">
-                {subtitle} {location && `• ${location}`}
+              <div className="text-sm mt-1 truncate">
+                <span className="font-semibold text-gray-900">{subtitle}</span>
+                {location && <span className="text-gray-600"> • {location}</span>}
               </div>
             )}
           </div>
@@ -85,7 +86,12 @@ const MilestoneCard = ({
             <div className="ml-16 space-y-4">
               {/* Description */}
               <div className="text-sm leading-relaxed text-black">
-                {description}
+                <span dangerouslySetInnerHTML={{ 
+                  __html: description.replace(
+                    /(\d+\s*(?:clients?|websites?|projects?)|React\/Next\.js|Node\.js|SEO optimization|full-stack development)/gi,
+                    '<span class="font-semibold text-blue-600">$1</span>'
+                  )
+                }} />
               </div>
               
               {/* Achievements */}
@@ -93,12 +99,23 @@ const MilestoneCard = ({
                 <div>
                   <h4 className="text-sm font-semibold text-gray-900">Key Achievements</h4>
                   <ul className="space-y-[-2px]">
-                    {achievements.map((achievement, index) => (
-                      <li key={index} className="text-sm leading-relaxed text-black">
-                        <span className="text-green-500 text-xl mr-2 mt-1 font-bold">•</span>
-                        {achievement}
-                      </li>
-                    ))}
+                    {achievements.map((achievement, index) => {
+                      const highlightImportantFacts = (text) => {
+                        return text.replace(
+                          /(₹\d+[k|K]?\s*(?:revenue|clients?|projects?|%|days?|time)|\d+%|\$\d+[k|K]?|\d+\+?\s*(?:clients?|projects?|websites?))/g,
+                          '<span class="font-bold text-blue-600">$1</span>'
+                        );
+                      };
+
+                      return (
+                        <li key={index} className="text-sm leading-relaxed text-black">
+                          <span className="text-green-500 text-xl mr-2 mt-1 font-bold">•</span>
+                          <span dangerouslySetInnerHTML={{ 
+                            __html: highlightImportantFacts(achievement) 
+                          }} />
+                        </li>
+                      );
+                    })}
                   </ul>
                 </div>
               )}
