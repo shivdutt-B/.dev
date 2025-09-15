@@ -7,8 +7,10 @@ import { cn } from "@/lib/utils";
 import { motion } from "framer-motion";
 import { ChevronRightIcon } from "lucide-react";
 import React from "react";
+import EXPERIENCE from "../data/Experience";
 
-export const Milestone = ({
+
+const MilestoneCard = ({
   logoUrl,
   altText,
   title,
@@ -49,8 +51,8 @@ export const Milestone = ({
             <div className="flex items-center justify-between gap-x-2 text-base">
               <h3 className="inline-flex items-center justify-center font-semibold leading-none text-xs sm:text-sm">
                 {title}
-                {badges && (
-                  <span className="inline-flex gap-x-1">
+                {badges && badges.length > 0 && (
+                  <span className="inline-flex gap-x-1 ml-2">
                     {badges.map((badge, index) => (
                       <Badge
                         variant="secondary"
@@ -80,14 +82,13 @@ export const Milestone = ({
               initial={{ opacity: 0, height: 0 }}
               animate={{
                 opacity: isExpanded ? 1 : 0,
-
                 height: isExpanded ? "auto" : 0,
               }}
               transition={{
                 duration: 0.7,
                 ease: [0.16, 1, 0.3, 1],
               }}
-              className="mt-2 text-xs sm:text-sm"
+              className="mt-2 text-xs sm:text-sm px-6 pb-4"
             >
               {description}
             </motion.div>
@@ -97,3 +98,5 @@ export const Milestone = ({
     </a>
   );
 };
+
+export default MilestoneCard;
