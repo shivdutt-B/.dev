@@ -2,28 +2,32 @@
 import React from "react";
 import EXPERIENCE from "../data/Experience";
 import MilestoneCard from "./MilestoneCard";
+import BlurFade from "./magicui/blur-fade";
 
 export const Experience = () => {
   return (
-    <div className='mt-12'>
-      <h2 className='text-xl font-bold mb-6'>Experience</h2>
-      {EXPERIENCE.map((item, index) => (
-        <div key={index} className='mb-4'>
-          <MilestoneCard
-            logoUrl={item.logoUrl}
-            altText={item.company}
-            title={item.title}
-            subtitle={item.company}
-            href={item.href}
-            badges={item.badges}
-            period={`${item.start} - ${item.end}`}
-            description={item.description}
-          />
+    <BlurFade>
+      <div className="w-full my-10">
+        <div className="font-calistoga text-gray-900 text-2xl mt-2 mb-2 flex flex-col gap-0 xxs:flex-row xxs:items-center xxs:justify-between">
+          <div className="font-calistoga text-gray-900 text-md">Experience</div>
         </div>
-      ))}
-    </div>
+        <div className="">
+          {EXPERIENCE.map((item, index) => (
+            <MilestoneCard
+              key={index}
+              logoUrl={item.logoUrl}
+              altText={item.company}
+              title={item.title}
+              subtitle={item.company}
+              href={item.href}
+              badges={item.badges}
+              period={`${item.start} - ${item.end}`}
+              description={item.description}
+            />
+          ))}
+        </div>
+      </div>
+    </BlurFade>
   );
 };
 
-// Export both components for flexibility
-export const Milestone = MilestoneCard;
