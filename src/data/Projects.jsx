@@ -120,7 +120,7 @@ export const PROJECTS = [
         {
           type: "Website",
           href: "https://heimdall-pings.vercel.app/",
-          icon: <Icons.globe className="size-3" />,
+          icon: <Icons.globe className="h-4 w-4" />,
         },
         {
           type: "Github",

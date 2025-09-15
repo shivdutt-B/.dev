@@ -55,8 +55,7 @@ function Projects() {
               description={project.description}
               tags={project.technologies}
               image={project.image}
-              screenshots={project.screenshots} // added
-              // video={project.video}
+              screenshots={project.screenshots}
               links={project.links}
             />
           </BlurFade>

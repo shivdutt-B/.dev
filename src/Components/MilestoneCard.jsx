@@ -1,7 +1,6 @@
 "use client";
 
 import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
-import { Badge } from "@/components/ui/badge";
 import { Card, CardHeader, CardContent } from "@/components/ui/card";
 import { cn } from "@/lib/utils";
 import { motion } from "framer-motion";
@@ -13,10 +12,10 @@ const MilestoneCard = ({
   altText,
   title,
   subtitle,
-  href,
-  badges,
   period,
   description,
+  achievements,
+  location,
 }) => {
   const [isExpanded, setIsExpanded] = React.useState(false);
 
@@ -50,19 +49,6 @@ const MilestoneCard = ({
                 <h3 className="font-semibold text-sm truncate">
                   {title}
                 </h3>
-                {badges && badges.length > 0 && (
-                  <div className="flex gap-1 flex-wrap">
-                    {badges.map((badge, index) => (
-                      <Badge
-                        variant="secondary"
-                        className="text-xs"
-                        key={index}
-                      >
-                        {badge}
-                      </Badge>
-                    ))}
-                  </div>
-                )}
                 <ChevronRightIcon
                   className={cn(
                     "size-4 text-muted-foreground transition-transform duration-300",
@@ -76,7 +62,7 @@ const MilestoneCard = ({
             </div>
             {subtitle && (
               <div className="text-sm text-black text-muted-foreground mt-1 truncate">
-                {subtitle}
+                {subtitle} {location && `• ${location}`}
               </div>
             )}
           </div>
@@ -96,8 +82,26 @@ const MilestoneCard = ({
           className="overflow-hidden"
         >
           <CardContent className="pt-0">
-            <div className="text-sm leading-relaxed text-black ml-16">
-              {description}
+            <div className="ml-16 space-y-4">
+              {/* Description */}
+              <div className="text-sm leading-relaxed text-black">
+                {description}
+              </div>
+              
+              {/* Achievements */}
+              {achievements && achievements.length > 0 && (
+                <div>
+                  <h4 className="text-sm font-semibold text-gray-900">Key Achievements</h4>
+                  <ul className="space-y-[-2px]">
+                    {achievements.map((achievement, index) => (
+                      <li key={index} className="text-sm leading-relaxed text-black">
+                        <span className="text-green-500 text-xl mr-2 mt-1 font-bold">•</span>
+                        {achievement}
+                      </li>
+                    ))}
+                  </ul>
+                </div>
+              )}
             </div>
           </CardContent>
         </motion.div>

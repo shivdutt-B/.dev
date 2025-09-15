@@ -117,7 +117,7 @@ export function ProjectCard({
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                <Badge className="flex gap-2 px-2 py-1 text-[10px] rounded-sm">
+                <Badge className="flex gap-2 px-2 py-1 text-[10px] rounded-sm"> 
                   {link.icon || <LinkIcon size={12} />}
                   {link.type}
                 </Badge>
