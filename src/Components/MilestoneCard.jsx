@@ -56,7 +56,7 @@ const MilestoneCard = ({
                   )}
                 />
               </div>
-              <div className="text-sm font-semibold text-gray-900 text-right whitespace-nowrap">
+              <div className="text-sm text-gray-600 text-right whitespace-nowrap">
                 {period}
               </div>
             </div>
@@ -88,7 +88,7 @@ const MilestoneCard = ({
               <div className="text-sm leading-relaxed text-black">
                 <span dangerouslySetInnerHTML={{ 
                   __html: description.replace(
-                    /(\d+\s*(?:clients?|websites?|projects?)|React\/Next\.js|Node\.js|SEO optimization|full-stack development)/gi,
+                    /(\d+\s*(?:clients?|websites?|projects?)|React\/Next\.js|Node\.js|SEO optimization|full-stack development|web solutions)/gi,
                     '<span class="font-semibold text-blue-600">$1</span>'
                   )
                 }} />
